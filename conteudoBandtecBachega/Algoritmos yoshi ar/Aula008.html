@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Alterando o corpo da Página</h2>
+
+    Informe seu nome: <input type="text" id="seu_nome" autofocus><br>
+    Informe sua cidade: <input type="text" id="cidade_natal"><br>
+
+    <button onclick="magica()">Faça Mágica!</button>
+
+    <div id = "div_mensagem" style="color: blue">
+
+    </div>
+    <!-- INNER HTML, alterar o corpo de uma TAG-->
+
+</body>
+</html>
+<script>   
+function magica(){
+   div_mensagem.innerHTML = `<h1>Seu nome é <b>${seu_nome.value}</b> e Nasceu em <i>${cidade_natal.value}</i></h1>`;
+
+
+}
+ 
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simuladr financeiro</title>
+</head>
+<body>
+    <center>
+    <span style="color: navy"> <h1><i><u>Simulador financeiro</u></i></h1> </span> <br>
+
+    <b>Qual seu instrumento?</b> <input id="instrumento">
+    <br>
+    <b>Insira o preço preço de seu instrumento</b> <input type="number" id="preco">
+    <br>
+    <b>Insira quanto gasta com manutenção mensal</b> <input type="number" id="manutensao">
+    <br>
+    <button onclick="calcular()">Quanto vou economizar?</button>
+
+    <div id="div_economia" style="display: none;color: red">?</div>
+    <div id="div_ecototal" style="display: none;color:red">?</div>
+    </center>
+    
+</body>
+</html>
+
+<script>
+function calcular() {
+var economia_manutensao = preco.value;
+var economia_total= `<b>${(Number(manutensao.value) + Number(preco.value))}</b>`;
+
+div_economia.innerHTML= economia_manutensao;
+div_economia.style.display='block'
+
+div_ecototal.innerHTML= economia_total;
+div_ecototal.style.display='block'
+}
+
+</script>

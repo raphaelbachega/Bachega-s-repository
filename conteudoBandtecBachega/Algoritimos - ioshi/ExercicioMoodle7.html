@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        Qual o valor da pizza? <input id="valorpizza"> 
+        Quantos amigos vão comer <input id="qtdpessoas">
+        <button onclick="calcular()">#LovePizza</button>
+</body>
+</html>
+
+<script>
+function calcular() {
+
+var valor_amigo = valorpizza.value / qtdpessoas.value;
+
+    alert(`cada um dos ${qtdpessoas.value} amigos vai pagar ${valor_amigo.toFixed(3)}`);
+
+}
+
+
+
+
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bilhete estudante</title>
+</head>
+<body>
+    Qual o valor da passagem? <input type="number" id="valorpassagem"> <br>
+    Quantas viagens fará por mes? <input type="number" id="viagenspmes"> <br>
+    <button onclick="calcular()" > Ver economia</button>
+
+</body>
+</html>
+
+<script>
+function calcular() {
+
+var economia= (valorpassagem.value * viagenspmes.value)/2;
+    alert(`Você economizará R$${economia} por mês`)
+
+}
+ 
+</script> 

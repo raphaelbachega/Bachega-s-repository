@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h2>HTML com Javascript</h2>
+
+        Informe seu nome: <input id="seu_nome"> <br>
+        Informe sua idade: <input id="idade"> <br>
+        <button onclick="contar()" >Conte-me algo</button>
+    
+</body>
+</html>
+
+<script>
+    function contar() {
+            alert('Começando o programa');
+
+            // Técnica de interpolação
+            alert(`Seu nome é ${seu_nome.value} e tem ${idade.value} anos`);
+
+            // Técnica de concatenação
+            alert('Seu nome é '+seu_nome.value+' e tem '+idade.value+' anos');
+
+    }
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Vários calculos</h2>
+
+    Sua idade: <input type="text" id="idade">
+    <br>
+    <button onclick="calcular_homen()">Aposentadoria se Homen</button>
+    <button onclick="calcular_mulher()">Aposentadoria se mulher</button>
+    
+</body>
+</html>
+
+<script>
+function calcular_homen() {
+// homen se aposenta com 70 anos.
+var tempo = 70 - Number(idade.value);
+alert(`Faltam ${tempo} anos para o homen se aposentar.`);
+
+}
+
+function calcular_mulher() {
+// mulher se aposenta com 60.
+var tempo = 60 - Number(idade.value);
+alert(`faltam ${tempo} anos para a mulher se aposentar`);
+
+}
+</script>

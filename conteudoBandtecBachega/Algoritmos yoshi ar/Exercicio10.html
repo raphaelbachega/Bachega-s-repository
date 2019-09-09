@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <h2>Let´s get the Dragon Balls</h2><br>
+
+Insira o nome do Guerreiro: <input type="text" id="nameg" autofocus><br><br>
+Insira a quantidade de Ki normal: <input type="text" id="ki"><br><br>
+
+<button onclick="kicalc()">Ver Ki em cada Forma</button>
+
+    
+</body>
+</html>
+
+<script>
+function kicalc(){
+
+var ss1 = ki.value * 50;
+var ss2 = ki.value * 100;
+
+    alert(`O nome do Guerreiro é ${nameg.value}\nPronto para o combate!`);
+    alert(`O ki do guerreiro ${nameg.value} em sua forma normal é ${ki.value}`);
+    alert(`Se transformando em Super Saiyajin 1, seu Ki passa a ser ${ss1}`);
+    alert(`Em Super Saiyajin 2, seu Ki ultrapassa ${ss2}`);
+
+}
+</script>

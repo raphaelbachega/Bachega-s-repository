@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tempo para aposentar</title>
+</head>
+<body>
+    
+    Qual a sua idade? <input id="idade">
+    <button onclick="calcular()">Calcular</button>
+
+</body>
+</html>
+
+<script>
+    function calcular() {
+        //criando duas VÁRIAVEIS
+        var tempo_homen = 60 - idade.value;
+        var tempo_mulher = 50 - idade.value;
+        //Criamos as variáveis "tempo_homen" e "tempo_mulher"
+        alert(`se for homen faltam ${tempo_homen} anos p/ aposentar`);
+        alert(`se for mulher faltam ${tempo_mulher} anos para aposentar`)
+            }
+</script>

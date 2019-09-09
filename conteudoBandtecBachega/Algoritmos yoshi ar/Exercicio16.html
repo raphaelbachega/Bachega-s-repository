@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 16</title>
+</head>
+<body>
+    <!-- 16 (desafio). Na matemática existe uma coisa chamada Progressão Geométrica. Usando sua fórmula, crie um programa em HTML/JS que:
+
+a) Solicite o valor do 1º termo e o valor da razão
+b) Solicite o termo que o usuário quer obter
+c) Ao clicar num botão "Calcular PG", calcular o valor do termo solicitado em b) exibir um alerta com uma frase como esta:
+ "O Xº termo dessa PG será Y" (onde X é o valor informado em b))
+
+#Ficadica: Para calcular potência em Javascript, o operador é **
+Ex: 2 ao cubo > 2**3 ;   6 ao quadrado > 6**2-->
+
+    <h2>Desafio: </h2><br>
+
+    Informe o Valor do 1° termo: <input type="text" id="term1"><br>
+    // Informe o valor da Razão : <input type="text" id="raz"><br>
+    Informe o termo que deseja obter: <input type="text" id="obterterm"><br>
+
+    <button onclick="pg()">Progressão Aritmética</button>
+
+    
+</body>
+</html>
+<script>
+function pg(){
+
+var termorazao = raz.value;
+var termoinit = term1.value;
+var pg = obterterm.value = termorazao * termoinit;
+
+
+alert(`O ${obterterm.value} dessa PG será ${pg}`);
+
+}
+</script>

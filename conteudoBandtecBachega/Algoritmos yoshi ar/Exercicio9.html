@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Futebol</title>
+</head>
+<body>
+    <h2>Futebol Solidário</h2><br>
+    Quantidade de ingressos de estudantes vendidos:<input type="text" id="testud" autofocus> <br>
+    Quantidade de Ingressos Comuns Vendidos:<input type="text" id="tcomum"><br>
+    Insira o valor do Ingresso Comun:<input type="text" id="valoringresso"><br>
+    <br>
+    <button onclick="arrecadar()">Arrecadação</button>
+    
+</body>
+</html>
+
+<script>
+
+function arrecadar(){
+
+    var testudante = (valoringresso.value * testud.value)/2; //Valor total dos Ingressos de Estudante
+    var ttcomum = tcomum.value * valoringresso.value; //Valor total ingressos comuns
+    var tarrecad = ttcomum + testudante;
+
+    alert(`A sua Arrecadação será R$ ${tarrecad.toFixed(2)}`);
+
+
+}
+</script>

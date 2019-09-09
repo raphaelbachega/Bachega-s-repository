@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    <!---14. Ajude Leandro Timista em sua nova rotina de perda de peso. Segundo seu médico o orientou:
+* Cada pão francês o faz ganhar 100 calorias
+* Cada casquinha do McDonalds o faz ganhar 300 calorias
+* Cada minuto de caminhada o faz perder 50 calorias
+* Cada minuto de musculação o faz perder 30 calorias
+
+Assim, crie um programa em HTML/JS que:
+
+a) Solicite ao usuário que informe quantos pães franceses e casquinhas consumiu no dia (são 2 campos de entrada)
+b) Solicite ao usuário que informe quantos minutos de caminhada e de musculação fez no dia (são 2 campos de entrada)
+c) Calcule quantas calorias o usuário ganhou e perdeu, chegando a um saldo (que poder ser positivo ou negativo, 
+dependendo dos valores informados)
+d) Exiba um alerta com uma frase como esta ao final "Entre calorias que ganhou e perdeu, seu saldo de calorias no dia é de X"
+ -->
+
+ <h2>Perdendo Peso with Rocky</h2><br>
+
+ Quantos Pães foram consumidos no dia? Informe: <input type="text" id="breaday"><br>
+ Quantas Casquinhas foram Consumidas no dia?Informe: <input type="text" id="daicecream"><br>
+ Informe quantos minutos de Caminhada: <input type="text" id="minwalk"><br>
+ Informe quantos minutos de Musculação, Informe: <input type="text" id="minmuscle"><br>
+
+ <button onclick="queimar()">Caloria Calculator</button> 
+     
+</body>
+</html>
+<script>
+function queimar(){
+
+    var paocal = breaday.value * 100; //ganha
+    var sorcal = daicecream.value * 300; //ganha
+    var walkal = minwalk.value * 50; //perde
+    var muscleal = minmuscle.value * 30; //perde
+    var totalganho = paocal + sorcal;
+    var totalperda = walkal + muscleal;
+    var totaldiario = totalganho - totalperda;
+    
+
+        alert(`Entre calorias que ganhou e perdeu, seu saldo de calorias no dia é de ${totaldiario}`);
+}
+</script>

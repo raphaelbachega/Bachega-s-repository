@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Planejando o futuro</title>
+</head>
+<body>
+  <h2>Planejando o Futuro</h2> <br>
+
+  Quanto pretende guardar por mês? <input type="number" id="economia">
+  <button onclick="calcular()">Ver planejamento</button> <br>
+  <div id="div_casa" style="display: none;color: blue"></div>
+  <div id="div_carro" style="display: none;color: blue"></div>
+  <div id="div_viagem" style="display: none;color: blue"></div>
+    
+</body>
+</html>
+
+<script>
+function calcular() {
+var casa = `Guardando R$ <b>${economia.value}</b> por mês, conseguirá comprar uma casa em
+<b>${(300000 / economia.value).toFixed(00)}</b> meses ou <b>${((300000 / economia.value)/12).toFixed(00)}</b> anos.`;
+
+var carro = `Guardando R$ <b>${economia.value}</b> por mês, conseguirá comprar o carro em 
+<b>${(20000 / economia.value).toFixed(00)}</b> meses ou <b>${((20000 / economia.value)/12).toFixed(00)}</b> anos.`;
+
+var viagem = `Guardando R$ <b>${economia.value}</b> por mês, conseguirá fazer a viagem em 
+<b>${(80000 / economia.value).toFixed(00)}</b> meses ou <b>${((8000 / economia.value)/12).toFixed(00)}</b> anos.`;
+
+div_casa.innerHTML = casa;
+div_casa.style.display='block'
+
+div_carro.innerHTML = carro;
+div_carro.style.display='block'
+
+div_viagem.innerHTML = viagem
+div_viagem.style.display='block'
+}
+</script>

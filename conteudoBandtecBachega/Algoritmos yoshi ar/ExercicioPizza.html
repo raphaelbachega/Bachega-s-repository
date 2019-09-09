@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LovePizza</title>
+</head>
+<body>
+    <h2><i>~~Equipe Lantra, Quanto custará a Pizza~~?</i></h2><br>
+    Insira o valor da Pizza R$: <input type="text" id="valorpizza" autofocus> <br> <br>
+ Insira a quantidade de Amigos: <input type="text" id="qtd_amigos"> <br><br>
+
+ <button onclick="vpizza()">#LovePizza</button>
+    
+</body>
+</html>
+
+<script>
+    function vpizza(){
+
+   var divpizza = valorpizza.value / qtd_amigos.value;
+
+    alert('Equipe Lantra, a conta está chegando(Rufar de Tambores)...')
+    alert(`Parabéns!\n\nCada um dos ${qtd_amigos.value} vai pagar R$ ${divpizza.toFixed(2)} .`);
+
+    }
+
+</script>

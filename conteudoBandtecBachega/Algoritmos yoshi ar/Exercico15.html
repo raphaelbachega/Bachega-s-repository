@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercico 15</title>
+</head>
+<body>
+    <!-- 
+        15. A família Lérgica está dando uma educação financeira a seus filhos desde cedo.
+         Eles possuem 3 filhos, chamados Huguinho, Zezinho e Luizinho e cada um possui um porquinho onde depositam 
+         moedas de R$0,50 (sempre desse valor). Para saber o quanto cada filho vai economizar, crie um programa em HTML/JS que:
+
+a) Solicite a quantidade de moedas depositadas por cada filho (note que são 3 campos de entrada)
+b) Calcule quanto cada filho guardou, em R$ (lembre que sempre depositam moedas de R$0,50)
+c) Exiba 3 alertas, um para cada filho, com mensagens como esta: "O Huguinho economizou R$X pois fez Y depósitos"
+
+    -->
+ <h2>Educação Financeira</h2><br>
+
+ Informe a Quantidade de moedas, Huguinho: <input type="text" id="qtdmoedaHuguin"><br>
+ Informe a Quantidade de Moedas, Zezinho: <input type="text" id="qtdmoedaZe"><br>
+ Inforem a Quantidade de Moedas, Luizinho: <input type="text" id="qtdmoedaLuiz"><br>
+
+ <button onclick= "economizar()">Quebre o Porco!</button>
+</body>
+</html>
+<script>
+     function economizar(){
+            var mdhugo = qtdmoedaHuguin.value * 0.50;
+            var mdze = qtdmoedaZe.value * 0.50;
+            var mdLuiz = qtdmoedaLuiz.value * 0.50;
+
+                alert(`O Huguinho economizou R$ ${mdhugo.toFixed(2)} , pois fez ${qtdmoedaHuguin.value} depósitos`);
+                alert(`O Zezinho economizou R$ ${mdze.toFixed(2)} , pois fez ${qtdmoedaZe.value} depósitos`);
+                alert(`O Luizinho economizou R$ ${mdLuiz.toFixed(2)} , pois fez ${qtdmoedaLuiz.value} depósitos`);
+
+     }
+</script>

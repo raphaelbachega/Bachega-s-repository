@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Informe seu Bairro: <input id="bairro"> <br>
+    Cachorros que tem no seu Bairro: <input type="number" id="cachorros"> <br>
+    
+    <button onclick="mostrar()">Análise Pet</button>
+    Informe o nome do veterinario requirido: <input id="vet">
+    <button onclick="calcVet()">Analise vet</button>
+    <br><br>
+
+    <div id="div_mensagem" style="display: none;color: red"> </div>
+    <div id="div_vet" style="display: none;color: blue"> </div>
+</body>
+</html>
+
+<script>
+function mostrar() {
+
+var frase = `Você mora em ${bairro.value} e tem ${cachorros.value}.`;
+
+    div_mensagem.innerHTML = frase;
+
+    div_mensagem.style.display ='block';
+    
+}
+function calcVet() {
+var fraseVet = `Seu veterinario é ${vet.value}.`;
+div_vet.innerHTML = fraseVet;
+div_vet.style.display='block';
+}
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BilhEstudante</title>
+</head>
+<body>
+    <h2>Informações Bilhete único Estudante</h2>
+Informe o valor da Passagem (R$): <input type="text" id="vpass"> <br><br>
+Informe quantas viagens serão feitas no mês: <input type="text" id="vjmes"><br>
+
+<button onclick="calcpass()">Ver Economia</button>
+
+    
+</body>
+</html>
+<script>
+function calcpass(){
+
+var vmensal = (vpass.value * vjmes.value)/2;
+    alert(`Você economizará ${vmensal.toFixed(2)}.`)
+
+}
+</script>

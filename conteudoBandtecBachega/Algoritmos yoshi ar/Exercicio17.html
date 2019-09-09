@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cachórros</h2>
+
+    Informe o bairro onde mora: <input type="text" id="bairro">
+    Informe o número de cachorros que possui: <input type="text" id="dognumber">
+
+    <button onclick="dogcalc()">Análise Pet</button>
+    <div id="div_mensagem" style = "color: chartreuse"></div>
+    
+</body>
+</html>
+<script>
+    function dogcalc(){
+        div_mensagem.innerHTML = `<h1> Você mora em <b>${bairro.value}</b> e tem <i>${dognumber.value}</i> cachorros </h1>`;
+    }
+</script>
+

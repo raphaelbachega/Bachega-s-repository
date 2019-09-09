@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulador Financeiro - Calcule já seu sensor!</title>
+</head>
+
+<!--Deixa a pagina alinhada no centro-->
+<body style="text-align:center;">
+    
+<h1> Simule quanto voce irá economizar comprando um sensor nosso!</h1>
+
+<p><b> Selecione o tipo de instrumento que você possui:</b></p>
+        <select id=Instrumentos>
+            <!-- O usuário escolhe seu instrumento. Assim que escolhido, é criado uma ID que já possui o valor daquele instrumento.-->
+                <option>Selecione o instrumento:</option>
+                <option id="violaoValor" value="700">Violão</option>
+                <option id="violaoImportValor" value="5000">Violão Importado</option>
+                <option id="violinoValor" value="500">Violino</option>
+                <option id="violinoImportValor" value="2000">Violino Importado</option>
+                <option id="contraValor" value="1200">Contrabaixo</option>
+                <option id="contraImportValor" value="5000">Contrabaixo Importado</option>
+                <option id="guitarraValor" value="1000">Guitarra</option>
+                <option id="guitarraImportValor" value="5000">Guitarra Importada</option>
+            </select>
+<br>
+         <b><p>Calcule abaixo quanto voce terá de economia em manutenção e em equipamentos novos.</p></b>
+
+         <!-- Inicia o programa do JavaScript.-->
+        <button onclick="Calcular()">Clique aqui!</button>
+
+        <!--Este envia a resposta do calculo para o cliente dependendo da resposta dele-->
+        
+
+            <div style="display: none" id="divViolao">
+            Um violão nacional custa R$ 700,00, e um conserto padrão custa R$ 150,00. Sua economia anual será em torno de <b id=violaoValorEconomia>?</b>
+            </div>
+
+            <div style="display: none" id="divViolaoImport"></div>
+            um violão importado custa R$ 5000,00 e um conserto padrão custa R$ 150,00. <b id=violaoImportValorEconomia>?</b>
+            </div>
+            <div style="display: none" id="divViolino"></div>
+            O violino tem um preço nacional médio de R$ 500,00, e o conserto custa em torno de R$ 175,00. <b id=violinoValorEconomia>?</b>
+            </div>
+            <div style="display: none" id="divViolinoImport"></div>
+            Um violino vindo de fora custa R$ 2000,00 e o conserto custa em torno de R$ 210,00. <b id=violinoImportValorEconomia>?</b>
+            </div>
+            <div style="display: none" id="divContra">
+            O contrabaixo nacional está custando R$ 1200,00, o conserto sai em torno de <b id=contraValorEconomia>?</b>
+            </div>
+            <div style="display: none" id=divContraImport"></div>
+            O contrabaixado importado está saindo na casa de $ 5000,00, o conserto sai em torno de  R$ 500,00 e voce irá economizar em torno de <b id=contraImportValorEconomia>?</b>
+            </div>
+
+            <div style="display: none" id="divGuitarra"></div>
+            A guitarra tem um valor nacional de R$ 1000,00, um conserto médio sai por volta de R$ 250,00 e voce irá economizar<b id=guitarraValorEconomia>?</b>
+            </div>
+
+            <div style="display: none" id="divGuitarraImport"></div>
+            A guitarra importada vem com o valor de R$ 5000,00 e um conserto médio sai por volta de R$ 350,00 e voce irá economizar por volta de <b id=guitarraImportValorEconomia></b>
+            </div>
+</body>
+</html>
+
+<script>
+function Calcular() {
+
+// Mostrar a div que está invisivel
+divResposta.style.display = 'block';
+
+// Valor de rconomia para cada instrumento
+economiaViolao = ;
+economiaViolaoImport = ;
+economiaViolino = ;
+economiaViolinoImport = ;
+economiaContrabaixo = ;
+economiaContraImport = ;
+economiaGuitarra = ;
+economiaGuitarraImport = ;
+
+}
+
+</script>

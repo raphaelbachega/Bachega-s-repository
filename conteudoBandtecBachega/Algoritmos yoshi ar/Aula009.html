@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Alterando o corpo da Página em várias Partes</h2>
+
+    Quanto como por dia?<br>
+    Em proteínas?<input type="text" id="proteinas">
+    Em carboidratos?<input type="text" id="carbo">
+    Em frutas/Legumes? <input type="text" id="frutas_legumes">
+
+    <button onclick="magica()">Fça Mágica</button>
+
+    <div id="div_mensagem">
+        Diariamente você come: <ul>
+            <li style="color: chartreuse" id= "li_prot">? proteínas</li>
+            <li style="color: rgb(226, 0, 0)" id="licarb">? Carboidratos</li>
+            <li style="color: rgb(25, 0, 255)" id= "ligumes">? frutas/legumes</li>
+            
+        </ul>
+    </div>
+    
+</body>
+</html>
+
+<script>
+function magica(){
+li_prot.innerHTML = `${proteinas.value} proteínas `;
+licarb.innerHTML = `${carbo.value} Carboidratos`;
+ligumes.innerHTML = `${frutas_legumes.value} Frutas/Legumes`;
+
+
+}
+
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrecadação por jogo.</title>
+</head>
+<body>
+    Qual a quantidade de ingresso de estudantes vendidos? <input type="number" id="ingresso_estudante"><br>
+    Qual a quantidade de ingressos comuns vendidos? <input type="number" id="ingressocomun"> <br>
+    Qual o valor do ingresso comun? <input type="number" id="valoringresso"> <br>
+    <button onclick="calcular()">Calcular a arrecadação</button>
+
+</body>
+</html>
+
+<script>
+function calcular() {
+
+    
+    var arrecadacao = (ingressocomun.value * valoringresso.value) + ((ingresso_estudante.value * valoringresso.value)/2);
+
+    alert (`A arrecadação foi de R$${arrecadacao.toFixed(2)}`)
+
+}
+
+
+</script>

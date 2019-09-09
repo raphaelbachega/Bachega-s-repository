@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 07</title>
+
+</head>
+<body>
+    <h2>HTML com Javascript</h2>
+
+    Informe seu nome: <input id="seu_nome"><br>
+    Informe sua Idade: <input id="idade"><br>
+
+    <button onclick="contar()">Conte-me Algo</button>
+    
+</body>
+</html>
+
+<script>
+//aqui criamos um algoritmo chamado "contar"
+/* Ou seja, criamos uma função chamada contar
+
+*/
+//a função contar vai pegar o 'seu_nome' e 'idade' e exibir em uma mesma frase zz
+
+function contar() {
+    //Aqui criamos 2 VARIÁVEIS; N pede tipagem de variável no JavaScript
+    var  seu_nome1 = seu_nome.value;
+    var idade1 = idade.value;
+
+    alert('Olá, o programa está começando!'); //Texto estático, Aspas Simples ou Duplas 'A', "A"
+    alert(`Você se chama ${seu_nome1} e tem ${idade1} anos`); /* INTERPOLAÇÃO -Textos estático e termos Expressão.
+    Sempre que tiver variavel, serão termos Expressão, termos dinâmicos(Variaveis) */
+    alert('Você se chama ' + seu_nome1+ ' e tem ' +idade1+ ' anos(2 vez)'); //CONCATENAÇÃO
+}
+</script>

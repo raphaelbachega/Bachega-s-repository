@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <!-- Na faculdade Bandtec o aluno tem 2 notas: A da "avaliação continuada" e a da "avaliação semestral". A média final é a soma simples entre 40% da "continuada" e 60% da "semestral". Assim, para ajudar um aluno para saber o quanto precisa para passar e estagiar em empresas como Easynvest, C6Bank, Tivit, Banco Safra, Deloitte, HP etc, crie um programa em HTML/JS que:
+
+a) Solicite a nota que ele tirou na "continuada" e na "semestral"
+b) Solicite o nome do aluno
+c) Calcule sua média
+d) Exiba uma frase como esta "A média de NOME será de MEDIA". Onde NOME é o valor informado em b) e MEDIA, o valor calculado em c) -->
+
+<h2></h2>
+<br>
+Digite o Nome do Aluno: <input type="text" id="nomealuno" autofocus><br>
+Informe a nota da Prova Continuada:<input type="text" id="cont"><br>
+Informe a nota da Prova Semestral: <input type="text" id="sem"><br>
+
+<button onclick="medcalc()">Calcular Média</button>
+
+    
+</body>
+</html>
+<script>
+function medcalc(){
+
+    medcont= cont.value * 0.4;
+    medsem= sem.value * 0.6;
+    var mediatotal = (medcont + medsem);
+    alert(`A média de ${nomealuno.value} será ${mediatotal}`);
+}
+</script>

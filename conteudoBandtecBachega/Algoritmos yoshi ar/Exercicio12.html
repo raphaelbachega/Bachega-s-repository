@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 12</title>
+</head>
+<body>
+    
+    <!-- 12. Túlio Milde é muito preocupado com o meio ambiente. E, ao invés de ficar postando memes e textões contra 
+        o governo por conta de desmatamentos e queimadas, resolveu fazer ações concretas em sua vida.
+         A primeira foi economizar água da torneira, evitando desperdício.
+          Túlio descobriu que uma torneira pingando desperdiça de em média 15 litros de água por minuto. Ele tem 3 torneiras em casa.
+
+Assim, crie um programa em HTML/JS que:
+
+a) Pergunte quantos minutos cada torneira ficou pingando (são 3 campos de entrada, um para cada torneira)
+b) Calcule o despercídio total conforme os valores informados em a)
+c) Exiba um alerta com uma frase como esta: "Suas 3 torneiras, juntas, desperdiçaram X litros de água"-->
+
+<h2>Salve o meio-ambiente</h2><br>
+Quantos minutos fica ligada a primeira Torneira:<input type="text" id="mintorn1" autofocus><br><br>
+Quantos minutos a Segunda torneira fica ligada? <input type="text" id="mintorn2"><br><br>   
+Quantos minutos a última torneira fica ligada?<input type="text" id="mintorn3"><br><br>
+
+<button onclick="economizar()">Save the Planet</button>
+
+</body>
+</html>
+<script>
+ function economizar(){
+var twater = (mintorn1.value * 15) + (mintorn2.value * 15) + (mintorn3.value * 15);
+    alert(`Suas 3 torneiras , juntas, desperdiçaram ${twater.toFixed(2)} litros de água`);
+
+
+ }
+</script>

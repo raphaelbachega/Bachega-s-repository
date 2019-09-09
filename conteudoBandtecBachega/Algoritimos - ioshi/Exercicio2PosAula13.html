@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dinheiro no Futuro</title>
+</head>
+<body>
+    <h2><u>Vai estar bem no futuro?</u></h2>
+    
+    <img src="semDinheiro.jpg" alt="Puxando os bolsos e vendo que nao tem dinheiro.">
+<br>
+    Quanto dinheiro terá em 6 meses?<input id="dinheiro6meses">
+    <br>
+    Quanto dinheiro terá em 3 anos?<input id="dinheiro3anos">
+    <br>
+    <button onclick="trocar()">Como estarei no futuro?</button>
+<br><br>
+
+<img id="homer" src="homerDinheiro.jpg" style="display: none" alt="homer segurando uma cédula monetária.">
+
+<div id="div_6meses" style="display: none"> </div>
+
+<br>
+
+<img id="goku" src="gokuDinheiro.png" style="display: none" alt="Goku olhando muito dinheiro"> 
+
+<div id="div_3anos" style="display: none"> </div>    
+
+<BR><BR><BR><BR><BR><BR>
+</body>
+</html>
+
+<script>
+function trocar(){
+
+    var meses6 = dinheiro6meses.value;
+    var anos3 = dinheiro3anos.value;
+
+
+    
+
+div_6meses.innerHTML = `O valor daqui a 6 meses é de: ${meses6}`;
+div_6meses.style.display='block';
+
+
+div_3anos.innerHTML = "tiauuuuuuuuuuuu";
+div_3anos.style.display='block';
+
+
+homer.style.display = "Block";
+goku.style.display = "Block";
+}
+
+</script>

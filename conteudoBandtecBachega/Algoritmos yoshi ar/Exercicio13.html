@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 13</title>
+</head>
+<body>
+
+    <!--13. Antônia Legre vai começar em seu primeiro emprego com carteira assinada após ser efetivada num estágio numa empresa de TI 
+        parceira da Bandtec. Enfim ela descobriu que quando um funcionário tem um salário de R$3.000,00,
+         na verdade não cai esse valor em sua conta, pois pela CLT temos vários descontos. Crie um programa em HTML/JS que:
+
+a) Solicite o valor do salário bruto do usuário
+b) Calcule o valor do desconto de INSS (previdência), que é 10% do valor do bruto
+c) Calcule o valor do desconto de IR (imposto de renda), que é 20% do valor do bruto
+d) Calcule o valor do imposto sindical, que é 1/30 do bruto
+e) Exiba um alerta com uma frase como esta: "Apesar de seu bruto ser R$X, após os descontos, você receberá somente R$Y"-->
+
+<h2>Calculator do Malvado Doofemsmisth</h2><br><br>
+
+Informe o Salário Bruto: <input type="text" id="salbruto"><br><br>
+
+<button onclick="calcular()">Calcule a Decepção</button>
+</body>
+</html>
+<script>
+    function calcular(){
+
+        var descinss = salbruto.value * 0.10;
+        var descir = salbruto.value * 0.20;
+        var descsindicato = salbruto.value /30;
+        var totaldesc = descinss + descir + descsindicato;
+        var saliq = salbruto.value - totaldesc;
+
+            alert(`Apesar de seu bruto ser R$ ${salbruto.value},após os descontos, você receberá somente R$ ${saliq.toFixed(4)}`);
+    }
+</script> 
+
