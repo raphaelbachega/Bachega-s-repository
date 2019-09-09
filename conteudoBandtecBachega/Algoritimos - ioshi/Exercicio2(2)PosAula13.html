@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dinheiro no Futuro</title>
+</head>
+<body>
+
+    <h2><i><u>Vai estar bem no futuro?</u></i></h2>
+    
+   <img src="semDinheiro.jpg" alt="Homen com o bolso para fora demonstrando estar sem Dinheiro.">
+    <br>
+   Quanto dinheiro terá em 6 meses? <input id="seismeses">
+    <br>
+   Quanto dinheiro terá em 3 anos? <input id="tresanos">
+    <br>
+    <button onclick="calcular()">Como estarei no futuro?</button>
+
+    <div id="div_6meses" style="display: none">
+        <img src="homerDinheiro.jpg" alt="Personagem Homer do desenho animado os simpsons segurando uma cedula de dinheiro.">
+        <div id="div_text6meses"></div>        
+        
+        <img src="gokuDinheiro.png" alt="Personagem Goku de Dragon ball Z encantado com dinheiro.">
+        <div id="div_text3anos"></div>
+
+    </div>
+
+
+
+<script>
+function calcular() {
+var valor6m = `O valor daqui a 6 meses assim R$${seismeses.value}.`;
+var valor3a = `O valor daqui a 3 anos assim R$${tresanos.value}.`;
+
+div_6meses.innerHTML ;
+div_6meses.style.display='block';
+div_text6meses.innerHTML = valor6m;
+div_text6meses.style.display='block';
+
+div_text3anos.innerHTML= valor3a
+div_text3anos.style.display='block';
+
+
+}
+</script>
