@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saldo de salário</title>
+</head>
+<body>
+    <span style="color: green"><h2><i>Saldo de salário.</i></h2></span>
+    
+    Insira seu salário <input type="number" id="salario"><br>
+    Insira a mesada de seu filho <input type="number" id="mesada"><br>
+    Insira o valor de abono de natal <input type="number" id="abono"><br>
+    <button onclick="calcular()">Calcular Saldo</button>
+
+</body>
+</html>
+
+<script>
+function calcular() {
+    var total = Number(salario.value) ;
+    total -= Number(mesada.value);
+    total += (Number(abono.value)/12);
+    alert(`O saldo total é ${Number(total).toFixed(01)}.`);
+
+}
+
+</script>
