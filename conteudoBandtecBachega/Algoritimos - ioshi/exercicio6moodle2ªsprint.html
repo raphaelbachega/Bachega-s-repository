@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feels</title>
+</head>
+<body>
+    <h1><u>Feels</u></h1>
+    <button onclick="feliz()">Feliz</button>
+    <button onclick="neutro()">Neutro</button>
+    <button onclick="triste()">Triste</button>
+    <button onclick="pistola()">Pistola</button>
+    <br>
+
+    <div id="div_foto" style="display: none">
+        <img id="foto1" style="width: 400px; height: 300px" src="saitama.png" alt="Personagem saitama.">
+    </div>
+    
+</body>
+</html>
+
+<script>
+function feliz() {
+    foto1.src = "saitamaFeliz1.jpg";
+    div_foto.style.display='block';
+}
+function neutro() {
+    foto1.src = "saitama.png";
+    div_foto.style.display="block";
+}
+function triste() {
+    foto1.src = "saitamaTriste.jpg";
+    div_foto.style.display="block";
+}
+function pistola() {
+    foto1.src = "saitama2.jpg";
+    div_foto.style.display="block";
+}   
+</script>
