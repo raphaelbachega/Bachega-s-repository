@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operações Matemáticas</title>
+</head>
+<body>
+    <h1><u><i>Operações Matemáticas</i></u></h1>
+    
+    Insira o primeiro valor <input type="number" id="valor1"><br>
+    Insira o segundo valor <input type="number" id="valor2"><br>
+    <button onclick="soma()">Soma</button>
+    <button onclick="diferenca()">Difernça</button>
+    <button onclick="produto()">Produto</button>
+    <button onclick="razao()">Razão</button>
+    <br>
+
+    <div id="div_resultado"></div>
+     
+</body>
+</html>
+
+<script>
+function soma() {
+var calculo = Number(valor1.value) + Number(valor2.value);
+div_resultado.innerHTML = `A soma entre ${valor1.value} e ${valor2.value} é ${calculo}.`
+}
+function diferenca() {
+var calculo = Number(valor1.value) - Number(valor2.value);
+div_resultado.innerHTML = `A diferença entre ${valor1.value} e ${valor2.value} é ${calculo}.`
+}
+function produto() {
+var calculo = Number(valor1.value) * Number(valor2.value);
+div_resultado.innerHTML = `O produto de ${valor1.value} e ${valor2.value} é ${calculo}.`
+}
+function razao() {
+var calculo = Number(valor1.value) / Number(valor2.value);
+div_resultado.innerHTML = `A razão entre ${valor1.value} e ${valor2.value} é ${calculo}.`
+}
+</script>
