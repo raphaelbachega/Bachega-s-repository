@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Contador Permanente</h2>
+
+    Você já clicou <b id="cliques">0</b> vezes.
+
+    <button onclick="clicar()">Clique aqui</button>
+    <br>
+    <button onclick="clicar15()">Roubar</button>
+
+</body>
+</html>
+
+<script>
+    //valores compartilhados entre todas funçoes
+    // sao chamados de variaveis GLOBAIS
+    var contador = 0;
+
+    function clicar() {
+        cliques.innerHTML = ++ contador;
+
+    }
+    function clicar15() {
+        contador +=15;
+        cliques.innerHTML = contador;
+    }
+
+</script>
