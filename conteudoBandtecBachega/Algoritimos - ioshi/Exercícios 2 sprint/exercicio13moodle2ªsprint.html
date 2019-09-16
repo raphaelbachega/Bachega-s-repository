@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Exercíxio 13 2ªsprint</h2>
+
+    <button onclick="aumentar()">Aumentar a largura</button>
+    <button onclick="diminuir()">Diminuir Altura</button><br>
+    <img id="saitama" width="500px" height="500px" src="saitama.png" alt="Persongaem de One Punch Man Saitama deizendo: Ok."><br>
+    
+
+
+</body>
+</html>
+
+<script>
+function aumentar() {
+var aumentar = Number(saitama.width);
+aumentar += 10;
+saitama.width = aumentar;
+
+}
+function diminuir() {
+var diminuir = Number(saitama.height);
+diminuir -= 10;
+saitama.height = diminuir;
+}
+
+</script>
