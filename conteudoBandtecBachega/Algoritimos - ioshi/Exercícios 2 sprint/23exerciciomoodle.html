@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>23 atendimento</title>
+</head>
+<body>
+    <h1><b>Como está meu atendimento?</b></h1>
+
+    <select id="atendimento">
+        <option value="1">1 Estrela</option>
+        <option value="2">2 Estrelas</option>
+        <option value="3">3 Estrelas</option>
+        <option value="4">4 Estrelas</option>
+        <option value="5">5 Estrelas</option>
+    </select><br>
+    <button onclick="confirmar()">Confirmar Avaliação</button><br><br>
+    Média atual de: <b id="mediaEstrela">0</b> estrelas
+    Número de avaliações: <b id="qtdAvaliacoes" >0</b> <br>
+    
+
+</body>
+</html>
+
+<script>
+    var media = 0;
+    var avaliacoes = 0;
+    
+function confirmar() {
+    media += Number(atendimento.value)
+    qtdAvaliacoes.innerHTML =++ avaliacoes;
+    mediaEstrela.innerHTML = (media / avaliacoes).toFixed(00)  ;
+
+
+}
+
+</script>
