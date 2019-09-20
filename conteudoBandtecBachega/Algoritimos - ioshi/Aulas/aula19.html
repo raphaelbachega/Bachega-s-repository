@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista suspensa ou "Combo Box":</h1>
+    <select id="frutas">
+        <!-- utilizamos uma option sem o 'value', para dar uma opção sem valor -->
+        <option>Escolha uma Fruta</option>
+        <option value="1">Abacate</option> <!-- "abacate" é o innerHTML, o valor da opção é "1" -->
+        <option value="2">Abacaxi</option>
+        <option value="3">Morango</option>
+        <option value="4">Pêra</option>
+    </select>
+    <!-- automaticamente, o select fica do tamanho do maior option que ele tiver-->
+    <!-- no select, ao se referir a alguma opção, devemos nos referir ao seu 'value',
+    e não ao que está no corpo da tag (pois o corpo seria apenas um style para o usuário visualizar) -->
+
+    <button onclick="ver_valor()">Ver Valor Real</button>
+
+</body>
+</html>
+
+<script>
+
+    function ver_valor(){
+
+        alert (`Valor real da combo: ${frutas.value}`);
+
+    }
+
+</script>
