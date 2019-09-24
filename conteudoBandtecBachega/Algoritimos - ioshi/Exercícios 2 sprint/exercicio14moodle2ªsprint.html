@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 14</title>
+</head>
+<body>
+    <h2>Exercício 14 2ªsprint.</h2>
+
+    Informe o seu salário <input id="salario" type="number"><br><br>
+
+    <button onclick="mostrar()" >Confirmar salário</button>
+    <button onclick="pagar100()">Pagar conta de R$100</button>
+    <button onclick="pagar500()">Pagar conta de R$500</button>
+    <button onclick="ganhar()">Ganhar R$2000 na loteria</button>
+
+    <div id="div_salario"></div>
+    
+</body>
+</html>
+<script>
+    var salarioAtual = 0
+    function mostrar() {
+        salarioAtual = Number(salario.value);
+        div_salario.innerHTML = `A Grana atual: R$${salarioAtual}`;
+    }
+    function pagar100() {
+        salarioAtual -= 100
+        div_salario.innerHTML = `A Grana atual: R$${salarioAtual}`;
+    }
+    function pagar500() {
+        salarioAtual -= 500
+        div_salario.innerHTML = `A Grana atual: R$${salarioAtual}`;
+    }
+    function ganhar() {
+        salarioAtual += 2000
+        div_salario.innerHTML = `A Grana atual: R$${salarioAtual}`;
+
+    }
+
+</script>

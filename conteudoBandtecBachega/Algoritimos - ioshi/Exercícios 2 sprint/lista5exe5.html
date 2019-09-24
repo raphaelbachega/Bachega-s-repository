@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ECONOMIA</h1>
+    
+        Quanto você tem economizado? <input type="number" id="economia"><br><br>
+        <button onclick="compra()">Poder de compra</button><br><br>
+        <div id="div_compra" ></div>
+</body>
+</html>
+
+<script>
+function compra() {
+var comprar = Number(economia.value);
+if (comprar <= 0) {
+    div_compra.innerHTML = `Nada de compras`;
+}
+if (comprar > 0) {
+    div_compra.innerHTML = `Viagem de ida e volta pra praia grande`;
+}
+if (comprar > 100){
+            div_compra.innerHTML += `<br>Uma boa moto usada`;
+}
+if(comprar >=4000){
+        div_compra.innerHTML += `<br>Mais alguma bobagem legal`;
+}
+}
+</script>

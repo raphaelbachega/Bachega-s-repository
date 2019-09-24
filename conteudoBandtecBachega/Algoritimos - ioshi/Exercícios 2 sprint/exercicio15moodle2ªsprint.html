@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TioPatinhas</title>
+</head>
+<body>
+    <span style="color: blue">Total guardado no cofrinho:R$ <u><b id="cofrinho">0.00</b></u><br>
+                                    Depósitos efetuados:<u><b id="deposito">0</u></b><br>
+
+    <button onclick="depositar05()">Depositar 0.50</button>
+    <button onclick="depositar2()">Depositar 2.00</button>
+    </span>
+    <br>
+</body>
+</html>
+
+<script>
+    var cofrinhoAtual = Number(0.00)
+    var depositoAtual = Number(0)
+function depositar05() {
+cofrinhoAtual += Number(0.50);
+cofrinho.innerHTML = cofrinhoAtual;
+depositoAtual = ++ depositoAtual;
+deposito.innerHTML = depositoAtual;
+}
+function depositar2() {
+cofrinhoAtual += Number(2.00);
+cofrinho.innerHTML = cofrinhoAtual;
+depositoAtual = ++ depositoAtual;
+deposito.innerHTML = depositoAtual;
+}
+
+</script>

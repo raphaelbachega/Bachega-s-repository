@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercicio 16</title>
+</head>
+<body>
+    <span style="color: darkgreen">Votos na <u>Praça é nossa:</u><b id="pnossa">0</b> <br>
+                                    Votos no <u>Zorra total:</u><b id="zorrat">0</b> <br> 
+                                    Total de votos:<b id="votos">0</b>
+                                    <br>
+</span>
+    <button onclick="praca()">Votar na praça é nossa</button>
+    <button onclick="zorra()">Votar no Zorra</button>
+
+</body>
+</html>
+
+<script>
+var pracaVotos = 0;
+var zorraVotos = 0;
+
+
+function praca() {
+
+    pnossa.innerHTML =  ++pracaVotos;
+    votos.innerHTML = (pracaVotos + zorraVotos);
+}
+function zorra() {
+
+    zorrat.innerHTML = ++zorraVotos;
+    votos.innerHTML = (pracaVotos + zorraVotos);
+}
+</script>

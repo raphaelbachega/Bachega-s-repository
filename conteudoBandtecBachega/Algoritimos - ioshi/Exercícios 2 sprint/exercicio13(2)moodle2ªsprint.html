@@ -11,22 +11,22 @@
 
         <button onclick="aumentar()">Aumentar a largura</button>
         <button onclick="diminuir()">Diminuir Altura</button><br>
-        <img id="saitama" style="width:500px" src="saitama.png" alt="Persongaem de One Punch Man Saitama deizendo: Ok."><br>
-    <div style="display:none" >
-        <span id="altura" >500</span>
-        <span id="largura" >500</span>
-    </div>
+        <img id="saitama" style="width:100x" src="saitama.png" alt="Persongaem de One Punch Man Saitama deizendo: Ok."><br>
+
 
 </body>
 </html>
 
 <script>
+    var medida = 100
         function aumentar() {
-        
-        
+            medida += 10
+            saitama.style.width = medida + 'px'
+
         }
         function diminuir() {
-        
+            medida -= 10
+            saitama.style.height = medida + 'px'
         
         }
         </script>

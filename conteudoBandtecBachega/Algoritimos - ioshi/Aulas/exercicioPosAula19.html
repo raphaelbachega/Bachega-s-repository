@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex aula 19</title>
+</head>
+<body>
+    Escolha seu Produto:
+    <select id="produtos">
+        <option value="10.00">Salgadinho Dos ritos</option>
+        <option value="7.50">Sabão em Pó</option>
+        <option value="4.00">Leite Condenado</option>
+        <option value="5.00">(Fala)Groselha</option>
+    </select>
+
+    <button onclick="verValor()">Ver preço</button>
+    
+</body>
+</html>
+
+<script>
+function verValor() {
+    alert(`Isso custa R$${Number(produtos.value).toFixed(02)}`)
+}
+
+</script>

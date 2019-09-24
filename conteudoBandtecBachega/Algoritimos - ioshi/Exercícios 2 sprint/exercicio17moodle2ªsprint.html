@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercicio 17</title>
+</head>
+<body>
+    <img onclick="voto1()" style="width: 250px; height:250px" src="saitamaFeliz1.jpg" alt="Personagem saitama de one punch man sorindo">
+    Votos: <b id="votoSaitama">0</b> <br>
+    <img onclick="voto2()" style="width: 250px; height:250px" src="goku.png" alt="Personagem Goku de Dragon ball">
+    Votos: <b id="votoGoku">0</b> <br><br><br>
+    Total de votos: <b id="voto">0</b>
+    
+</body>
+</html>
+
+<script>
+var saitamaVotos = 0
+var gokuVotos = 0
+
+function voto1() {
+votoSaitama.innerHTML = ++ saitamaVotos;
+voto.innerHTML = (saitamaVotos + gokuVotos);
+
+}
+function voto2() {
+votoGoku.innerHTML = ++ gokuVotos;
+voto.innerHTML = (saitamaVotos + gokuVotos);
+
+}
+
+</script>
