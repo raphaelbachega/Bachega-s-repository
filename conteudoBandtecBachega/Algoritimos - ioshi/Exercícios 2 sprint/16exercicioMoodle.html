@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>16 mini urna eletrônica</title>
+</head>
+<body>
+    <h1>Mini urna eletrônica.</h1>
+
+   <span style="color:darkgreen" > Votos na Praça é Nossa: <b id="pracaVotos" >0</b><br>
+    Votos no Zorra Total: <b id="zorraVotos" >0</b><br>
+    Total de votos: <b id="totalVotos" >0</b>
+    </span><br>
+    <button onclick="zorra()">Votar no Zorra</button>
+    <button onclick="praca()">Votar na praça</button>
+    
+</body>
+</html>
+
+<script>
+var zorraInicial = 0
+var pracaInicial = 0
+function zorra() {
+zorraVotos.innerHTML = ++ zorraInicial;
+totalVotos.innerHTML = Number(totalVotos.innerHTML) + 1;
+
+}
+function praca() {
+pracaVotos.innerHTML = ++ pracaInicial;
+totalVotos.innerHTML = Number(totalVotos.innerHTML) + 1;
+
+}
+</script>

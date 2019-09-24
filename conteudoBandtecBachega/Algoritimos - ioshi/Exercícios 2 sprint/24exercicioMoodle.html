@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>24 salário</title>
+</head>
+<body>
+    <h1>Desconto de salário</h1>
+    Digite seu salário <input id="salario">
+    <select id="descontos">
+        <option value="0.1">INSS</option>
+        <option value="0.2">IR</option>
+        <option value="0.05">VT</option>
+    </select>
+    <button onclick="desconto()">Ver desconto</button>
+
+    <div id="div_msg" style="display:none"></div>
+
+</body>
+</html>
+
+<script>
+function desconto() {
+var desconto = Number(salario.value) * Number(descontos.value);
+div_msg.innerHTML =` seu desconto é ${desconto}`;
+div_msg.style.display='block';
+
+}
+
+
+</script>

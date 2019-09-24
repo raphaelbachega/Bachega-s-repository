@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escolha o personagem</h1>
+    <img onclick="saitama()" style="width:250px; height:250px" id="saitamaFoto"src="saitamaFeliz1.jpg">
+    Votos: <span id="votosSaitama" >0</span>
+    <br>
+    <img onclick="goku()" style="width: 250px; height:250px" id="gokuFoto" src="goku.jpg">
+    Votos: <span id="votosGoku" >0</span>
+</body>
+</html>
+
+<script>
+    var saitamaInicial = 0
+    var gokuInicial = 0
+    function saitama() {
+        votosSaitama.innerHTML = ++ saitamaInicial;
+    }
+    function goku() {
+        votosGoku.innerHTML = ++ gokuInicial;
+    }
+</script>

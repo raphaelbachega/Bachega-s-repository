@@ -1,0 +1,8 @@
+div{
+    float: left;
+    height: 50vh;
+    width: 40vw;
+    margin-left: 25vw;
+    margin-top: 30vh;
+    border:double 10px rgba(3, 94, 10, 0.507);
+    border-radius: 1000000000px
