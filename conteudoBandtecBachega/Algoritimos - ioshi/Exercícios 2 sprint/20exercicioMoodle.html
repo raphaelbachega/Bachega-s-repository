@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>20 mercadin do seu zé</h1>
+
+    <select id="produtos">
+        <option value="8.00">Salgardinhos Doritos</option>
+        <option value="7.00">Sabão em pau</option>
+        <option value="10.00">Nuttela generica de procedencia duvidosa</option>
+        <option value="5.00">Coca-cola generica de procedencia duvidosa</option>
+    </select>
+    <br>
+    <button onclick="ver()">Ver preço</button>
+</body>
+</html>
+<script>
+function ver() {
+alert(`O preço é: R$${produtos.value}`);
+}
+</script>

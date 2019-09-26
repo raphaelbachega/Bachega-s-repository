@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="esquerda()">Mover para Esquerda</button>
+    <button onclick="direita()">Mover para Direita</button>
+    <br>
+    <img id="fotoBart" src="bart.png" alt="Personagem Bart de Os Simpsons andando de skate">
+    
+</body>
+</html>
+
+<script>
+    var movimento = 0;
+function direita() {
+    movimento += Number(30);
+    fotoBart.style.marginLeft = movimento + 'px';
+}
+function esquerda() {
+    movimento -= Number(30);
+    fotoBart.style.marginLeft = movimento + 'px';
+}
+</script>
