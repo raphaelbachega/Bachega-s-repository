@@ -8,9 +8,25 @@
 </head>
 <body>
     <h1>Nota</h1>
-    Insira a sua 1ª nota: <input id="nota1" type="number"><br>
+    Insira a sua 1ª nota: <input id="nota1" autofocus type="number"><br>
     Insira a sua 2ª nota: <input id="nota2" type="number"><br>
-    <button onclick="calcular()"></button>
-    
+    <button onclick="calcular()">Verificar situação.</button>
+    <br><br>  
 </body>
 </html>
+
+<script>
+
+    function calcular() {
+        
+        var media = ((Number(nota1.value) + Number(nota2.value))/2);
+        
+        if (media < 5) {
+            alert(`Tente outra vez...`);
+        }
+        else {
+            alert(`Parabéns, aprovado!`);
+        }
+    }
+
+</script>
