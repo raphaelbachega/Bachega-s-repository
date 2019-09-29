@@ -4,64 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inscrição no Talmid</title>
-    <link rel="stylesheet" href="./talmidStyle.css">
-    <script src=""></script>
-
+    <title>Cadastro no Talmid</title>
+    <link rel="stylesheet" href="./talmidStyle02.css">
+    <script src="./script02.js"></script>
 </head>
 <body>
-
-    <img width="120mw" height="120mw" src="plantar.png"> <h1>Talmid</h1>
+    <span class="talm">Talm</span> <span class="bordaId"><span class="id">id</span></Span><br>
+        <ul id="menu">
+                <li><a href="https://www.google.com.br">Home</a></li>
+                <li><a href="https://www.google.com.br">Sobre nós</a></li>
+                <li><a href="https://www.google.com.br">Contate-nos</a></li>
+                <li><a href="https://www.google.com.br">Entrar</a></li>
+            </ul>
     <br>
-    
-      <a href=""><button>Entrar</button></a>
-
-    <h2>Leve o conhecimento para o mundo e aprenda com ele.</h2>
-    <br>
-
- Qual seu intuito? <br><br> <select onclick="selecionar()" id="intuito">
+     <!-- leve conhecimento para o mundo e aprenda com ele -->
+     <!-- seja a mudança que você quer no mundo -->
+     <!-- se queremos progredir, não devemos repetir a história, mas fazer uma história nova -->
+     <h2>"Seja a mudança que você quer no mundo."</h2>
+     <br>
+     <span class="borda">
+ <span class="qual" >Qual o intúito de cadastro?</span><br><select class="checkBox" onclick="selecionar()" id="intuito">
                     <option value="0">  -- Selecione aqui -- </option>
                     <option value="1">Aprender</option>
                     <option value="2">Ensinar</option>
                     <option value="3">Patrocinar</option>
                     <option value="4">Cadastrar instituição</option>
                  </select>
-    <br><br><br>
-    <div style="display: none" id="div_cadastro1" ><a href="http://moodle.bandtec.com.br/"><button>Cadastrar</button></a></div>
-    <div style="display: none" id="div_cadastro2" ><a href="https://www.youtube.com"><button>Cadastrar</button></a></div>
-    <div style="display: none" id="div_cadastro3" ><a href="https://pt-br.facebook.com/"><button>Cadastrar</button></a></div>
-    <div style="display: none" id="div_cadastro4" ><a href="https://www.google.com.br/"><button>Cadastrar</button></a></div>
-
-    <br>
-
+                 <br>
+    <div class="cadastrar" style="display: none" id="div_cadastro" ><a class="botaocad" id="a1" href="">Cadastrar</a></div>
+ </span>
 </body>
-</html>  
-
-<script>
-function selecionar() {
- if (intuito.value == 1) {
-     div_cadastro1.style.display='block';
-     div_cadastro2.style.display='none';
-     div_cadastro3.style.display='none';
-     div_cadastro4.style.display='none';
- }
- if (intuito.value == 2) {
-    div_cadastro1.style.display='none';
-    div_cadastro2.style.display='block';
-    div_cadastro3.style.display='none';
-    div_cadastro4.style.display='none';
- }
- if (intuito.value == 3) {
-    div_cadastro1.style.display='none';
-    div_cadastro2.style.display='none';
-    div_cadastro3.style.display='block';
-    div_cadastro4.style.display='none';
- }
- if (intuito.value == 4) {
-    div_cadastro1.style.display='none';
-    div_cadastro2.style.display='none';
-    div_cadastro3.style.display='none';
-    div_cadastro4.style.display='block';
- }
-}
-</script>
+</html>
