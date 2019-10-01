@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exe aula 24</title>
+</head>
+<body>
+    <h2>aula 24 Voto</h2>
+    Qual a sua idade? <input id="idade" type="number"><br>
+    <button onclick="ver()" >Averiguar</button><br>
+    
+</body>
+</html>
+<script>
+function ver(){
+    var valor_idade = Number(idade.value);
+    if (valor_idade <18 || valor_idade >65){
+        alert(`Seu voto é opicional`);
+    }
+    else {
+        alert(`Você é obrigada(o) a votar`)
+    }
+}
+</script>
