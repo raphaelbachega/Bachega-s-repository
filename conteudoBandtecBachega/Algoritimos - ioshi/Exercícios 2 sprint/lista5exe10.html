@@ -8,11 +8,18 @@
 </head>
 <body>
     <h1>Cofrinho</h1>
-    Valor guardado: R$ <b>0.00</b> <br><br>
+    Valor guardado: R$ <b id="total">0.00</b> <br><br>
     <div style="display: none" id="div_positivo"></div><br>
     <button onclick="g5()">Guardar R$5.00</button>
     <button onclick="g10()">Gastar R$10.00</button><br>
-
+    <div style="display: none" id="div_text"></div>
     
 </body>
 </html>
+<script>
+    var numero = 0;
+function g5(){
+    total.innerHTML += Number(5);
+    
+}
+</script>
