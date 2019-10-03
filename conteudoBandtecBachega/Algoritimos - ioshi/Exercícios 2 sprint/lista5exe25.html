@@ -22,6 +22,18 @@
 <script>
 function calcular(){
     var kilometragem = Number(km.value);
+    if((trans.value ==3 || trans.value ==2 || trans.value ==1) && kilometragem <10){
+        alert(`Ta tranks`);
+    }
+    else{
+        alert(`É... um pouco cansado.`);
+    }
+    if((trans.value ==2 || trans.value ==1) && kilometragem >10){
+        alert(`Bem cansado.`);
+    }
+    if((trans.value ==4) && kilometragem >10){
+        alert(`Vish... ta só o pó.`);
+    }
     
 
 }

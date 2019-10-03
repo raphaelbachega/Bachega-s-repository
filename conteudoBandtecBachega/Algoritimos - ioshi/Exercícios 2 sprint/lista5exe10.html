@@ -9,17 +9,39 @@
 <body>
     <h1>Cofrinho</h1>
     Valor guardado: R$ <b id="total">0.00</b> <br><br>
-    <div style="display: none" id="div_positivo"></div><br>
+    <div style="display: none" id="div_msg"></div><br>
     <button onclick="g5()">Guardar R$5.00</button>
     <button onclick="g10()">Gastar R$10.00</button><br>
-    <div style="display: none" id="div_text"></div>
-    
 </body>
 </html>
 <script>
-    var numero = 0;
-function g5(){
-    total.innerHTML += Number(5);
-    
-}
+var valor = 0;
+    function g5(){
+        valor += 5;
+        total.innerHTML = valor;
+        if(valor >=0) {
+            div_msg.innerHTML = `Finanças ok!`;
+            div_msg.style.display='block';
+            div_msg.style.color='blue';
+            if(valor >100) {
+                div_msg.innerHTML +=`<br>#ostentação`;
+            div_msg.style.display='block';
+            div_msg.style.color='blue';
+            }
+        }
+    }
+    function g10(){
+        valor -= 10;
+        total.innerHTML = valor;
+        if(valor <0) {
+            div_msg.innerHTML = `Finanças em perigo`;
+            div_msg.style.display='block';
+            div_msg.style.color='red';
+            if(valor <-20) {
+                div_msg.innerHTML +=`<br>Quase um corinthians`;
+            div_msg.style.display='block';
+            div_msg.style.color='red';
+            }
+        }
+    }
 </script>

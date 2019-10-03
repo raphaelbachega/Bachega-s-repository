@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Selecione o tipo de passageiro: <select id="tipo">
+        <option value="1">Estudante</option>
+        <option value="2">Comum</option>
+        <option value="3">Idoso/PNE</option>
+    </select><br><br>
+    Selecione o tipo de passagem: <select id="passagem">
+        <option value="4">Passagem única</option>
+        <option value="5">Integração</option>
+    </select><br><br>
+    <button onclick="simular()">Simular Preço</button>
+    <div id="div_texto"></div>
+    
+</body>
+</html>
+<script>
+function simular(){
+var valorPassagem = 4;
+var integra = 1.50;
+if (tipo.value == 3){
+div_texto.innerHTML = `O valor da sua passagem é R$0.00.`;
+}
+if (tipo.value == 2 && passagem.value == 4){
+div_texto.innerHTML = `O valor da sua passagem é R$${valorPassagem}.`;
+}
+if (tipo.value == 2 && passagem.value == 5){
+div_texto.innerHTML = `O valor da sua passagem é R$${valorPassagem+integra}.`;
+}
+if (tipo.value ==1 && passagem.value ==4){
+div_texto.innerHTML = `O valor da sua passagem é R$${valorPassagem/2}.`;
+}
+if (tipo.value ==1 && passagem.value ==5){
+    div_texto.innerHTML = `O valor da sua passagem é R$${(valorPassagem/2)+integra}.`;
+}
+}
+</script>

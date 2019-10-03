@@ -7,7 +7,38 @@
     <title>Document</title>
 </head>
 <body>
-    
-    
+    Vida do lutador: <b id="vida">8000</b> <br>
+    <button id="btm" onclick="apanhar()">Apanhar</button>
+    <button id="btm2" onclick="concentrar()">Concentrar Força</button><br>
+    <img id="foto" width="200px" height="300px" src="goku.jpg">
+    <div style="color:green" id="div_vivo"><h1>Lutador ainda vivo!</h1></div>
 </body>
 </html>
+<script>
+    vidaTotal = 8000;
+    function apanhar(){
+        vidaTotal -= 100;
+        vida.innerHTML = vidaTotal;
+        if(vidaTotal <= 0){
+            div_vivo.innerHTML =`<h1>Lutador já era!</h1>`;
+            div_vivo.style.color='red';
+        }
+            if (vidaTotal <= 0){
+                btm.onclick = "";
+                foto.src = 'gokuderrotado.jpg';
+            }
+        }
+    function concentrar(){
+        vidaTotal += 10;
+        vida.innerHTML = vidaTotal;
+        if(vidaTotal >0){
+            div_vivo.innerHTML =`<h1>Lutador ainda vivo</h1>`;
+            div_vivo.style.color='green';
+        }
+        if(vidaTotal <0){
+            btm2.onclick = "";
+        }
+
+    }
+
+</script>
