@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="contar()">Números cabalísticos</button>
+    <div id="div_numeros"></div>
+</body>
+</html>
+<script>
+function contar(){
+    div_numeros.innerHTML = '';
+    var contador = 1;
+    while(contador <=15){
+        if(contador != 3 && contador !=4 && contador !=7 && contador !=10 && contador !=12) {
+            div_numeros.innerHTML += `${contador}<br>`;
+        }
+        contador++;
+    }
+
+}
+</script>

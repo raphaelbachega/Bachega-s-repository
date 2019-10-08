@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Estruturas de repetição (while)</h2>
+
+    <button onclick="repetir_alerts()">Repetir Alerts</button>
+    <br>
+    <button onclick="repetir_html()">Repetir na página</button>
+    <div id="div_frases"></div>
+</body>
+</html>
+<script>
+    function repetir_html(){
+        div_frases.innerHTML = '';
+        var contador = 0;
+        while (contador<10){
+            div_frases.innerHTML +='Algoritmos é vida! <br>';
+            contador++;
+        }
+    }
+function repetir_alerts(){
+    var contador = 0;
+
+    while (contador<10){
+        alert('Algoritmos é vida!');
+        contador++;
+    }
+}
+
+</script>
