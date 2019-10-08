@@ -1,0 +1,29 @@
+.bordaId{
+    border:solid 5px;
+    color: rgb(0, 0, 130);
+    border-left: none;
+    padding-top:5.5vh;
+}
+.talm{
+    font-size: 300%;
+    font-family: 'Trebuchet MS';
+    color: rgb(0, 0, 130);
+    
+}
+.id{
+    font-size: 400%;
+    font-family: 'Trebuchet MS';
+    font-weight: 900;
+    color: orange;
+}
+
+HTML
+
+<p><span class="talm">Talm</span> <span class="bordaId"><span class="id">id</span></Span></p><br>
+
+
+<span class="links">
+        <a href="https://pt-br.facebook.com/"><img src="iconfacebok.png" alt=""></a>
+        <a href="https://www.instagram.com/?hl=pt-br"><img src="iconinstagram.png" alt=""></a>
+        <a href="https://br.linkedin.com/"><img src="iconlinkedin.png" alt=""></a>
+        </span>
