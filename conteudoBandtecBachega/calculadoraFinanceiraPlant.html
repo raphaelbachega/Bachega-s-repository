@@ -7,18 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    Qual a quantidade de Hortaliças/Flores mensal?<input id="qtd" type="number"><br>
-    Qual o valor medio gasto com cada Hortaliças/Flores?<input id="valor" type="number"><br>
+    Selecione seu tipo de vaso: <select onclick="selecionar()" id="vaso">
+        <option value="1">Vaso 1</option>
+        <option value="2">Vaso 2</option>
+        <option value="3">Vaso 3</option>
+    </select>
  <button onclick="calcular()">Calcular</button>
  <div id="div_total"></div>
 
 </body>
 </html>
 <script>
-    function calcular(){
-        var total = (qtd.value) * (valor.value);
-        var valorTotal = total - (total * 0.2);
-        var valorCerto = total - valorTotal;
-        div_total.innerHTML = `Sua economia com o nosso produto será de R$${(valorCerto).toFixed(2)}.`;
+    function selecionar(){
+
     }
+    function calcular(){
+        
+    }        
 </script>
