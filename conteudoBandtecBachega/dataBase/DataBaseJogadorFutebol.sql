@@ -21,3 +21,8 @@ select * from jogador;
 insert into futtime values
 (null,'Palmeiras','Mano Menezes',19140826),
 (null,'São Paulo','Fernando Diniz',19300127),
+(null,'Bahia','Roger Machado',19310101),
+(null,'Santos','Jorge Sampaoli',19120414),
+(null,'Cruzeiro','Rogério Ceni',19210102);
+select * from futtime;
+select * from jogador;
