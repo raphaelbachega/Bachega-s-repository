@@ -14,8 +14,16 @@
 </html>
 <script>
 function atazanar(){
-var elefantes = qtd.value;
-var contador = 0;
+    div_atazanar.innerHTML ='';
+    var elefantes = qtd.value;
+    var contador = 1;
+    var palavra1 = `incomoda`
+    var palavra = `incomodam, `;
 
+    while(contador <= elefantes){
+        contador++;
+        div_atazanar.innerHTML += `1 elefante ${palavra1} muita gente!<br>`;
+        
+    }
 }
 </script>

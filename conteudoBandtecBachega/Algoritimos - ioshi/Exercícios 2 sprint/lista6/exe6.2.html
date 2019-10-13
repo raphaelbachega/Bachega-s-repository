@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Insira a quantidade de elefantes: <input id="qtd" type="number"><br>
+    <button onclick="varia()">Atazanar a médium</button>
+    <div id="show"></div>
+</body>
+</html>
+<script>
+function varia(){
+        var vezes = 1;
+        var contador = 1;
+
+        while(contador < qtd.value){
+            contador ++;
+            show.innerHTML += `1 elefante Incomoda muita gente<br>`;
+            show.innerHTML += `${contador} elefantes`
+            
+
+            while(vezes < contador){
+
+                show.innerHTML += ` incomodam, `;
+                show.innerHTML += ` muito mais <br><br>`;
+                vezes++;
+                
+            }
+        }    
+        
+    }
+</script>

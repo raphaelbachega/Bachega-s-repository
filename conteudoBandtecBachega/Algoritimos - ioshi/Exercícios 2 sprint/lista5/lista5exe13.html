@@ -7,18 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    <img width="200px" src="goku.jpg" alt="">
-    <div style="border:solid green; width: 400px;height: 20px;background-color: green"  id="div_goku"></div>
+    <img id="gokuFoto" width="200px" src="goku.jpg" alt="">
     <button onclick="gapanha()">Apanhar</button>
+    <div style="border:solid green;background-color: green;width: 500px;height: 20px;" id="gokuBarra" ></div><br>
+    <div id="saitamaVencedor"></div>
 <br><br><br>
-    <img width="300px" src="saitamaFeliz1.jpg" alt="">
-    <div style="border:solid green; width: 400px;height: 20px;background-color: green"  id="div_saitama"></div>
+
+    <img id="saitamaFoto" width="300px" src="saitamaFeliz1.jpg" alt="">
     <button onclick="sapanha()">Apanhar</button>
+    <div style="border:solid green;background-color: green;width: 500px;height: 20px;" id="saitamaBarra" ></div><br>
+    <div id="gokuVencedor"></div>
 </body>
 </html>
 <script>
+var diminuir = 500;
+var diminuir1 = 500;
 function gapanha(){
-    var 
+   diminuir -= 25;
+   gokuBarra.style.width =`${diminuir}px`;
+   if(diminuir <= 0){
+    saitamaVencedor.innerHTML =`<h1>Saitama Venceu!</h1>`;
+    gokuFoto.src = 'gokuDerrotadoSaitama.jpg';
+   }
 }
-
+function sapanha(){
+   diminuir1 -= 25;
+   saitamaBarra.style.width =`${diminuir1}px`;
+   if(diminuir1 <= 0){
+    gokuVencedor.innerHTML =`<h1>Goku Venceu!</h1>`;
+    saitamaFoto.src = 'saitamaDerrotado.jpg';
+   }
+}
 </script>
