@@ -11,18 +11,12 @@
     Quantos trens voce precisa pegar? <input id="trem1" type="text"><br>
     Quantos metros voce precisa pegar? <input id="metro1" type="text"><br>
     <button onclick="partiu()">#Partiu trajeto</button><br>
-    <div id="div_onibus"></div><br>
-    <div id="div_trem"></div><br>
-    <div id="div_metro"></div>
-
-
+    <div id="div_trajeto"></div><br>
 </body>
 </html>
 <script>
 function partiu(){
-    div_onibus.innerHTML = '';
-    div_trem.innerHTML = '';
-    div_metro.innerHTML = '';
+    div_trajeto.innerHTML = '';
 var onibus = onibus1.value;
 var trem = trem1.value;
 var metro = metro1.value;
@@ -30,19 +24,19 @@ var contador = 1;
 var contador1 = 1;
 var contador2 = 1;
 while(contador <= onibus){ 
-    div_onibus.innerHTML += `Pegando o ${contador} busão.<br>`;
-    div_onibus.style.color='red';
+    div_trajeto.innerHTML += `Pegando o ${contador} busão.<br>`;
+    div_trajeto.style.color='red';
     contador++;
-}
-while(contador1 <= trem){ 
-    div_trem.innerHTML += `Pegando o ${contador1} trem.<br>`;
-    div_trem.style.color='green';
-    contador++;
-}
-while(contador2 <= metro){ 
-    div_metro.innerHTML += `Pegando o ${contador2} metro.<br>`;
-    div_metro.style.color='blue';
-    contador++;
-}
-}
+        if(contador <=trem)
+        div_trajeto.innerHTML += `Pegando o ${contador1} trem.<br>`;
+        div_trajeto.style.color='green';
+        contador1++;
+            if(contador <= metro)
+            div_trajeto.innerHTML += `Pegando o ${contador2} metro.<br>`;
+            div_trajeto.style.color='blue';
+            contador2++;
+        }
+    }
+
+
 </script>

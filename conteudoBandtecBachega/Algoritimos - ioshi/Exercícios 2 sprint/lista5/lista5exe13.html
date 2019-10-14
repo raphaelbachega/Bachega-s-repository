@@ -7,16 +7,18 @@
     <title>Document</title>
 </head>
 <body>
+  
     <img id="gokuFoto" width="200px" src="goku.jpg" alt="">
-    <button onclick="gapanha()">Apanhar</button>
-    <div style="border:solid green;background-color: green;width: 500px;height: 20px;" id="gokuBarra" ></div><br>
+    <button id="gokub" onclick="gapanha()">Apanhar</button>
+    <div style="border:solid green;background-color: green;width: 500px;height: 20px;" id="gokuBarra" >Vida</div><br>
     <div id="saitamaVencedor"></div>
 <br><br><br>
 
     <img id="saitamaFoto" width="300px" src="saitamaFeliz1.jpg" alt="">
-    <button onclick="sapanha()">Apanhar</button>
-    <div style="border:solid green;background-color: green;width: 500px;height: 20px;" id="saitamaBarra" ></div><br>
+    <button id="saitamab"onclick="sapanha()">Apanhar</button>
+    <div style="border:solid green;background-color: green;width: 500px;height: 20px;" id="saitamaBarra" >Vida</div><br>
     <div id="gokuVencedor"></div>
+
 </body>
 </html>
 <script>
@@ -28,6 +30,7 @@ function gapanha(){
    if(diminuir <= 0){
     saitamaVencedor.innerHTML =`<h1>Saitama Venceu!</h1>`;
     gokuFoto.src = 'gokuDerrotadoSaitama.jpg';
+    saitamab.onclick = '';
    }
 }
 function sapanha(){
@@ -36,6 +39,7 @@ function sapanha(){
    if(diminuir1 <= 0){
     gokuVencedor.innerHTML =`<h1>Goku Venceu!</h1>`;
     saitamaFoto.src = 'saitamaDerrotado.jpg';
+    gokub.onclick = '';
    }
 }
 </script>
