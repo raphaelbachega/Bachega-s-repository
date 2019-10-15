@@ -16,7 +16,13 @@
 function atazanar(){
     div_atazanar.innerHTML ='';
     var elefantes = Number(qtd.value);
-    var contador = 1;
-    
+    var contador = 0;
+    while(contador < elefantes){
+        div_atazanar.innerHTML +=`1 elefante incomoda muita gente!<br>`;
+        contador++;
+        if(contador > 1){
+            div_atazanar.innerHTML +=`${contador} elefantes `;
+        }
+    }
 }
 </script>
