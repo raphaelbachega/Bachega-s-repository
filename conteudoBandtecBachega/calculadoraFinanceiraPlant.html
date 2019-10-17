@@ -7,21 +7,43 @@
     <title>Document</title>
 </head>
 <body>
-    Selecione seu tipo de vaso: <select onclick="selecionar()" id="vaso">
-        <option value="1">Vaso 1</option>
-        <option value="2">Vaso 2</option>
-        <option value="3">Vaso 3</option>
+    <h1>Para ter ideia de suas vantagens!  </h1>
+<br>
+    Selecione o alimento especial
+    <select onclick="selecionar()" id="alimentos">
+        <option value="0"> --Selecione Aqui-- </option>
+        <option value="1">Pizza</option>
+        <option value="2">Torta de morango</option>
+        <option value="3">Orquídea</option>
+        <option value="4">Molho de Pimenta</option>
     </select>
- <button onclick="calcular()">Calcular</button>
- <div id="div_total"></div>
+    <button onclick="confirmar()" >Confirmar alimento</button>
+    <img id="foto" src="" alt="">
 
+    <div id="div_msg" ></div>
+    
 </body>
 </html>
 <script>
-    function selecionar(){
+function selecionar(){
+    if(alimentos.value == 0){
+        foto.src=``;
+    }
+    if(alimentos.value == 1){
+        foto.src=``;
 
     }
-    function calcular(){
-        
-    }        
+    if(alimentos.value == 2){
+        foto.src=``;
+
+    }
+    if(alimentos.value == 3){
+        foto.src=``;
+
+    }
+    if(alimentos.value == 4){
+        foto.src=``;
+
+    }
+}
 </script>
