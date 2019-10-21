@@ -1,0 +1,64 @@
+
+/* Inicio do estilo site Index */
+body{
+    margin: 0;
+}
+html{
+    background-image: url(imagens/studyGroup.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header{
+    height: 25vh;
+    background-color: black;
+}
+.logo{
+    height: 25vh;
+    width: 60vw;
+    margin-left: 20vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.774);
+}
+.logo img{
+   
+}
+.subNav{
+    height: 6vh;
+    background-color:rgba(78, 78, 78, 0.808);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.subNav ul li{
+color: black;
+text-decoration: none;
+list-style-type: none;
+transition: 1s;
+transform: scale(1.1);
+}
+.subNav ul li:hover{
+    color: rgb(243, 145, 17);
+    transition-duration: 1s;
+}
+.allScreen{
+    height: auto;
+    min-height: 80vh;
+}
+.loginBox{
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 20px;
+    height: 60vh;
+    width: 25vw;
+    float: right;
+    margin: 3%;
+}
+footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 20vh;
+    background-color:rgba(78, 78, 78, 0.808);
+}
