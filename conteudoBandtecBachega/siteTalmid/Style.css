@@ -65,8 +65,15 @@ header{
 }
 h2{
     text-align: center;
-    font-family: 'Trebuchet MS';
-    
+    font-family: 'Trebuchet MS';]
+    /* terminar */
+}
+.carrossel{
+    display: flex;
+    border:solid 5px;
+    flex-direction: column;
+    background-color: blueviolet;
+    padding: 10%;
 }
 footer{
     align-items: center;
