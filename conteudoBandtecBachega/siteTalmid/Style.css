@@ -1,4 +1,3 @@
-
 /* Inicio do estilo site Index */
 body{
     margin: 0;
@@ -23,7 +22,7 @@ header{
     display: flex;
 }
 .logo img{
-    transition: 0.5s;
+    
     transition-duration: 0.5s;
     transform: scale(1.0);
 }
@@ -39,6 +38,11 @@ header{
     justify-content: center;
     display: flex;
 }
+ul li{
+    display: inline-block;
+    padding: 20px;
+
+}
 .subNav ul li{
     color: black;
     text-decoration: none;
@@ -53,6 +57,18 @@ header{
     transform: scale(1.3);
     cursor: pointer;
 }
+.divBar li a{
+    color: orange;
+    list-style: none;
+    list-style-type: none;
+    display: block;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-weight: 900;
+}
+.divBar li a:hover{
+    color: rgb(255, 255, 255);
+}
 /* construção do conteúdo */
 .allScreen{
     height: auto;
@@ -60,7 +76,6 @@ header{
 }
 /* caixa de login */
 .loginBox{
-    border: solid 1px rgb(0, 0, 0);
     border-radius: 20px;
     height: 60vh;
     width: 25vw;
@@ -78,15 +93,23 @@ input{
     border-left: none;
     border-right: none;
     border-bottom-style: double;
-    padding: 5px;
+    padding: 6px;
     transition: 0.5s;
     transition-duration: 0.5s;
     outline: none;
+    margin-top: 5%;
+    text-align: center;
+}
+::-webkit-input-placeholder{
+    color:rgba(255, 166, 0, 0.514);
+    text-align: center;
+    font-weight: 500;
 }
 input:hover{
     background-color: rgba(255, 166, 0, 0.253);
     transition: 0.5s;
     transition-duration: 0.5s;
+
 }
 button{
 background-color: rgba(0, 0, 0, 0);
@@ -100,6 +123,7 @@ transition: 0.5s;
 transition-duration: 0.5s;
 outline: none;
 cursor: pointer;
+margin-top: 5vh;
 }
 button:hover{
 background-color: orange;
@@ -109,25 +133,26 @@ border-bottom: solid 1px rgb(255, 255, 255);
 transition: 0.5s;
 transition-duration: 0.5s;
 }
+.divlinkSenha{
+    margin: 5vh;
+}
 .linkSenha{
     color: orange;
+    font-size: 110%;
 }
-::-webkit-input-placeholder{
-    color:rgba(255, 166, 0, 0.514);
-    text-align: center;
-    font-weight: 500;
-}
+
 h2{
     text-align: center;
     font-family: 'Trebuchet MS';
+    font-size: 150%;
     color: orange;
     background-color: rgba(0, 0, 0, 0.582);
     width: 20vw;
     margin: auto;
     margin-top: 5vh;
-    /* terminar */
 }
 .carrossel{
+    border-color: grey;
     display: flex;
     border:solid 2px;
     flex-direction: column;
@@ -143,10 +168,12 @@ footer{
     background-color:rgba(78, 78, 78, 0.808);
     flex-direction: column;
 }
-.maps{
-width: 40vw;
-height: 40vh;
+.maps iframe{
+width: 30vw;
+height: 30vh;
+border: solid black;
 float: right;
+margin: 5vh;
 }
 /* style scrollBar */
 ::-webkit-scrollbar{
