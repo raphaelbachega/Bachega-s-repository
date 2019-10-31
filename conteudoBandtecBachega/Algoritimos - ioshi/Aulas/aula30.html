@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Parte inteira de um numero</h2>
+
+    <input id="numero" onkeyup="parte_inteira()">
+    <div id="div_numero"></div>
+    
+</body>
+</html>
+<script>
+function parte_inteira(){
+    // a função 'parseInt()' tenta converter seu conteudo
+    // em um numero inteiro
+    // NÃO É FEITO ARREDONDAMENTO! a parte decimal é IGNORADA
+    var numero_inteiro = parseInt(numero.value);
+    // pegar parte inteira/TRUNCAR = parseInt
+    div_numero.innerHTML = `Inteiro: ${numero_inteiro}`
+
+}
+</script>
