@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    digite o numero de mundiais fifa que seu clube tem: <input id="numMundiais">
+    <button onclick="mundiais1()">Ver troféus mundiais FIFA</button>
+    <div id="div_mundiais"></div>
+</body>
+</html>
+<script>
+    function mundiais1(){
+        var mundiais = numMundiais;
+        for(contador = 1; contador <= mundiais; contador++){
+            div_mundiais.innerHTML +=`<img src="trofeu.png">`
+        }
+    }
+</script>
