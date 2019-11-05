@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     Insira a quantidade de elefantes: <input id="qtd" type="number"><br>
     <button onclick="atazanar()">Atazanar a médium</button>
-    <div id="div_atazanar"></div>
+    <div id="div_elefantes"></div>
 </body>
+
 </html>
 <script>
-function atazanar(){
-    div_atazanar.innerHTML ='';
-    var elefantes = Number(qtd.value);
-    var umElefante =`1 elefante incomoda muita gente!<br>`;
-    
-    if(elefantes == 1){
-        div_atazanar.innerHTML += umElefante;
-    }
-    while(elefantes > contador){
-        div_atazanar.innerHTML =``;
-        var contador = 2;
-        div_atazanar.innerHTML += `${umElefante} ${contador} elefantes`;
-        contador++;
-    }
+    function atazanar() {
+        div_elefantes.innerHTML = '';
 
+        var elefantes = Number(qtd.value);
+
+        var umElefante = `1 elefante incomodam muita gente!<br>`;
+        if (elefantes == 1) {
+            div_elefantes.innerHTML = umElefante;
+        }
+        var contador = 2;
+        while ( contador <= elefantes) {
+        var incomodam = 0;
+        var palavrasIncomodam = ``;
+            while ( incomodam < contador) {
+                palavrasIncomodam += `incomodam, `;
+                incomodam++;
+            }
+
+            div_elefantes.innerHTML += `${umElefante}
+    ${contador} elefantes ${palavrasIncomodam} muito mais!<br><br>`;
+
+            contador++
+        }
     }
 </script>
