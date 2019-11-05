@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="multiplo()">Adoro Múltiplos de 5!</button>
+    <div id="div_multiplos"></div>
+</body>
+</html>
+<script>
+function multiplo(){
+    for(contador = 5;contador <101;contador++){
+        if(contador%5==0){
+        div_multiplos.innerHTML += `${contador}<br>`;
+    }
+  }
+}
+</script>

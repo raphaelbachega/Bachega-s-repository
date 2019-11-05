@@ -14,9 +14,13 @@
 </html>
 <script>
     function mundiais1(){
-        var mundiais = numMundiais;
+        div_mundiais.innerHTML ='';
+        var mundiais = numMundiais.value;
+       if(mundiais == 0){
+            div_mundiais.innerHTML +=`<img style="width:400px" src="choro.jpg">`;
+        }
         for(contador = 1; contador <= mundiais; contador++){
-            div_mundiais.innerHTML +=`<img src="trofeu.png">`
+            div_mundiais.innerHTML +=`<img src="trofeu.png">`;
         }
     }
 </script>
