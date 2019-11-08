@@ -34,18 +34,20 @@ insert into obra values
 select * from obra;
 
 create table dependente (
-idDependente int,
+fkDependente int,
 nome varchar(40),
 relacionamento varchar(10),
-dataNasc date);
-
+dataNasc date,
+idDependente int,
+primary key(fkDependente, idDependente));
+select * from dependente;
 insert into dependente values
-(1,'claudia','esposa',19850306),
-(1,'enzo','filho',20070801),
-(2,'paulo rogerio','marido',19910704),
-(3,'valentina','filha',20090902),
-(4,'joao cherudo','marido',19900707),
-(5,'ricardo jao','marido',19760308);
+(1,'claudia','esposa',19850306,1),
+(1,'enzo','filho',20070801,2),
+(2,'paulo rogerio','marido',19910704,1),
+(3,'valentina','filha',20090902,1),
+(4,'joao cherudo','marido',19900707,1),
+(5,'ricardo jao','marido',19760308,1);
 select * from dependente;
 
 create table trabalha (
@@ -69,7 +71,7 @@ alter table trabalha add foreign key (fkObra) references obra(idObra);
 alter table trabalha add primary key (fkEngenheiro,fkObra);
 
 
-alter table dependente add foreign key (idDependente) references engenheiro(idEngenheiro);
+alter table dependente add foreign key (fkDependente) references engenheiro(idEngenheiro);
 
 -- selects.
 
@@ -82,5 +84,8 @@ select * from engenheiro,dependente where idEngenheiro = idDependente and relaci
 
 select obra.*,engenheiro.*,bancoHoras from engenheiro, trabalha, obra where idEngenheiro = fkEngenheiro and idObra = fkObra;
 
+select * from engenheiro, trabalha, obra where fkengenheiro = idEngenheiro and fkobra = idobra and localObra ='capao redondo';
+select * from engenheiro, trabalha, obra where fkengenheiro = idEngenheiro and fkobra = idobra and idobra =1001;
 
+select * from engenheiro, dependente, obra, trabalha where idengenheiro = fkdependente and idengenheiro = fkengenheiro and localobra like 'manaus';
 
