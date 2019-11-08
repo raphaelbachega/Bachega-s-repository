@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>8 elevador</title>
+</head>
+<body>
+    <h1>elevador</h1>
+
+    Qual a quantidade de homens no elevador? <input id="qtdhomen"> <br>
+    Qual a quantidade de mulheres no elevador? <input id="qtdmulher"> <br>
+    <button onclick="ligar()">Ligar elevador</button>
+    <div id="div_peso">.</div>
+
+</body>
+</html>
+
+<script>
+
+    function ligar() {
+
+        var pesoTotal = Number(qtdhomen.value)*90 + Number(qtdmulher.value)*70;
+        var difHM = pesoTotal - 500;
+            div_peso.innerHTML = pesoTotal < 500 ? `<span style="color:blueviolet"> Elevador vai se mover pois esta com ${pesoTotal}Kg para mover o elevador.</span>` :`Alguem precisa descer, precisa perder ${difHM}kg para mover o elevador.`;
+        }
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Iterando em vetores</h2>
+
+    informe um filme que ja asistiu
+    <input id="filme">
+    <br><button onclick="cadastrar()">cadastrar</button>
+    <div id="div_filmes"></div>
+</body>
+</html>
+<script>
+// vetor vazio.
+var filmes =[];
+
+function cadastrar(){
+    filmes.push(filme.value);
+
+    div_filmes.innerHTML = `cadastrados: ${filmes.length}<br>`;
+
+    for(var indice=0; indice < filmes.length;indice++){
+        div_filmes.innerHTML += `${filmes[indice]}<br>`;
+    }
+}
+</script>

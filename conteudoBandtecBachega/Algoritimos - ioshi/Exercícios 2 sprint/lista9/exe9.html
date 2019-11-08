@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Digite sua idade <input onkeyup="verificar()" id="idade1">
+    <div id="div_idade"></div>
+</body>
+</html>
+<script>
+function verificar(){
+    div_idade.innerHTML ='';
+var idade = Number(idade1.value);
+for(contador = 0;contador <= idade;contador++){
+ var texto = `${contador} anos, `;
+if(contador >=0 && contador<=4){
+    div_idade.innerHTML +=`${texto}Primeira infância<br>`;
+}
+else if(contador >4 && contador <=6){
+    div_idade.innerHTML +=`${texto}Pré-escola<br>`;
+}
+else if(contador >6 && contador <=10){
+    div_idade.innerHTML +=`${texto}Segunda infância<br>`;
+}
+else if(contador >10 && contador <=18){
+    div_idade.innerHTML +=`${texto}Adolescência<br>`;
+}
+else if(contador >18 && contador <=50){
+    div_idade.innerHTML +=`${texto}Adulto<br>`;
+}
+else if(contador >50 && contador <=100){
+    div_idade.innerHTML +=`${texto}Melhor idade<br>`;
+}
+else{
+    div_idade.innerHTML +=`${texto}Matuzalém<br>`;
+}
+}
+}
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Qual a sua altura? <input id="altura1" onkeyup="avaliar()">
+    <div id="div_altura"></div>
+</body>
+</html>
+<script>
+function avaliar(){
+    
+    var altura = altura1.value;
+
+    if(altura <=1.65){
+        div_altura.innerHTML = "Você pode ser piloto de corrida";
+    }
+    else if(altura >1.80){
+        div_altura.innerHTML = "Você pode ser jogador de volei ou basquete";
+    }
+    else{
+        div_altura.innerHTML = "Você pode ser jogador de futebol"
+    }
+}
+</script>

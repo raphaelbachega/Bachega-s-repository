@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>numeros aleatórios</h2>
+
+    <button onclick="sortear()">Sortear!</button>
+    <button onclick="sortear_ate_9()">sortear ate 9</button>
+    <button onclick="sortear_1e6()">Sortear entre um e seis</button>
+    <button onclick="sortear_1e50()">Sortear sortear entre um e 50</button>
+</body>
+</html>
+<script>
+function sortear(){
+    // sempre entre 0 e 0.999... (até antes de 1)
+    var  sorteado = Math.random();
+    alert(sorteado);
+}
+function sortear_ate_9(){
+    // smepre entre 0 e 9.9999 (antes de 10)
+    var  sorteado = Math.random()*10;
+    alert(sorteado);
+}
+function sortear_1e6(){
+    // sempre entre um e seis
+    var  sorteado = parseInt(Math.random()*6)+1;
+    alert(sorteado);
+}
+function sortear_1e50(){
+    // sempre entre um e cinquenta
+    var  sorteado = parseInt(Math.random()*50)+1;
+    alert(sorteado);
+}
+</script>

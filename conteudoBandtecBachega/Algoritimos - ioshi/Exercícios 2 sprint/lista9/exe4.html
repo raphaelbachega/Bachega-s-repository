@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ver()">Numeros cabalistícos</button>
+    <div id="div_show"></div>
+</body>
+</html>
+<script>
+//  function ver(){
+//      div_show.innerHTML ='';
+//    var contador = 1;
+//      while(contador <=15){
+//          if(contador !=3 && contador !=4 && contador !=7 && contador !=10 && contador !=12){
+//              div_show.innerHTML +=`${contador}<br>`;
+//          }contador++;
+//      } 
+//  }
+function ver(){
+    div_show.innerHTML ='';
+    for(var contador =1;contador <=15;contador++){
+        if(contador !=3 && contador !=4 && contador !=7 && contador !=10 && contador !=12){
+         div_show.innerHTML +=`${contador}<br>`;
+         }
+     }
+ }
+</script>

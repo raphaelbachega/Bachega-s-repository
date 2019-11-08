@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Quantos onibus voce precisa pegar? <input id="onibus1" type="text"><br>
+    Quantos trens voce precisa pegar? <input id="trem1" type="text"><br>
+    Quantos metros voce precisa pegar? <input id="metro1" type="text"><br>
+    <button onclick="partiu()">#Partiu trajeto</button><br>
+    <div id="div_trajeto"></div>
+    <div id="div_trem"></div>
+    <div id="div_metro"></div>
+
+</body>
+</html>
+<script>
+function partiu(){
+    div_trajeto.innerHTML = '';
+    div_metro.innerHTML = '';
+    div_trem.innerHTML ='';
+var onibus = onibus1.value;
+var trem = trem1.value;
+var metro = metro1.value;
+var contador = 1;
+var contador1 = 1;
+var contador2 = 1;
+while(onibus >= contador){ 
+    div_trajeto.innerHTML += `Pegando o ${contador}º busão.<br>`;
+    div_trajeto.style.color='red';
+    contador++;
+}
+while(trem >= contador1){
+    div_trem.innerHTML += `Pegando o ${contador1}º trem.<br>`;
+    div_trem.style.color='green';
+    contador1++;
+}
+while(metro >= contador2){
+    div_metro.innerHTML += `Pegando o ${contador2}º metro.<br>`;
+    div_metro.style.color='blue';
+    contador2++;
+}
+}
+</script>

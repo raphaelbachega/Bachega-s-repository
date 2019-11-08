@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Qual sua renda familiar? <input id="rendaF" onkeyup="calcular()">
+    <div id="div_classe" ></div>
+    
+</body>
+</html>
+<script>
+function calcular(){
+    var renda = rendaF.value;
+
+    if(renda <=250){
+        div_classe.innerHTML = "Classe E";
+    }
+    
+    else if(renda >250 && renda <=900){
+        div_classe.innerHTML = "Classe D";
+    }
+    else if(renda >900 && renda <=2500){
+        div_classe.innerHTML = "Classe C";
+    }
+    else if(renda >2500 && renda <9500){
+        div_classe.innerHTML = "Classe B";
+    }
+    else{
+        div_classe.innerHTML = "Classe A";
+    }
+}
+</script>

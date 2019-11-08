@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Insira o numero de voltas da corrida! <input id="idVoltas" onkeyup="voltas1()">
+    <div id="div_voltas"></div>
+</body>
+</html>
+<script>
+function voltas1(){
+    div_voltas.innerHTML ='';
+    var voltas = idVoltas.value;
+    for(contador =1;contador <= voltas;contador++){
+        div_voltas.innerHTML +=`Carro dando a ${contador}ª volta<br>`;
+    }
+    if(voltas = contador){
+        div_voltas.innerHTML +=`Corrida finalizada!`;
+    }
+}
+</script>

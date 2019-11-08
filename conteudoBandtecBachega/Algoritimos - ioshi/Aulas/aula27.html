@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Operador ternário</h2>
+
+    Qual sua altura?Será que pode jogar basquete? <br>
+    <input id="altura" onkeyup="verificar()" type="text">
+
+    <div id="div_resultado"></div>
+</body>
+</html>
+<script>
+function verificar(){
+    div_resultado.innerHTML = '';
+    // o usuário pode ser jogador de basquete
+    // se tiver pelo menos 1,8m de altura
+    var valor_altura = Number(altura.value);
+
+    // usando o operador ternário para mudar o innerHTML
+    div_resultado.innerHTML = valor_altura >= 1.8 ? 'Você pode jogar basquete' : 'Você não pode jogar basquete';
+
+    //Funcionamento:
+    //Teste lógico
+}
+</script>

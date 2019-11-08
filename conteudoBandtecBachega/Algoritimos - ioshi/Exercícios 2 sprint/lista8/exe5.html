@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    qual a temperatura? <input id="temperatura" onkeyup="medir()">
+    <div id="div_temp" ></div>
+</body>
+</html>
+<script>
+function medir(){
+    var temp = temperatura.value;
+
+    if(temp <14){
+        div_temp.innerHTML = "Congelante";
+    }
+    else if(temp >=14 && temp <=21){
+        div_temp.innerHTML = "Com frio";
+    }
+    else if(temp >21 && temp <=24){
+        div_temp.innerHTML = "confortável";
+    }
+    else if(temp >24 && temp <=31){
+        div_temp.innerHTML = "Com calor";
+    }
+    else{
+        div_temp.innerHTML = "Calor escaldante";
+    }
+}
+</script>
