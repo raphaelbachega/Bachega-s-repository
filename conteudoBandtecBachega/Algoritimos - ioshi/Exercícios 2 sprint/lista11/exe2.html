@@ -17,11 +17,14 @@
 var filmes =[];
 function cadastrar(){
     filmes.push(nomedofilme.value);
-   
+    div_filmes.innerHTML ='';
+    for(var indice=0;indice<filmes.length;indice++){
+        div_filmes.innerHTML +=`${filmes[indice]}<br>`;
     }
 
-
+    }
 function ver(){
+    
     div_filmes.innerHTML =`total: ${filmes.length}<br>`;
     div_filmes.innerHTML +=`O que ele mais gosta é o ${filmes[0]}<br>`;
     div_filmes.innerHTML +=`E desses o que ele menos gosta é o ${filmes[filmes.length -1]}`;

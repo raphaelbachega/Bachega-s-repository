@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Quais linhas você pegou? <input id="qtdlinhas"><br>
+    <button onclick="cadastrar()">Cadastrar</button><br>
+<br>
+    Qual linha você quer consultar? <input id="qualLinha"><br>
+    <button onclick="pesquisar()">Pesquisar</button><br>
+    <div id="div_linhas1"></div>
+    <div id="div_linhas"></div>
+</body>
+</html>
+<script>
+    var linhas =[];
+    function cadastrar(){
+        div_linhas.innerHTML ='';
+        linhas.push(qtdlinhas.value);
+        for(var indice=0;indice < linhas.length;indice++){
+            div_linhas.innerHTML +=`${linhas[indice]}<br>`;
+        }
+    }
+    function pesquisar(){
+        var contador =1;
+        for(var indice=0;indice < linhas.length;indice++){
+            if(linhas[indice] == qualLinha.value){
+                div_linhas.innerHTML =`Você ja pegou essa linha ${contador} vezes, nessa ordem:`;
+                contador++;
+            }
+        }
+    }
+</script>
