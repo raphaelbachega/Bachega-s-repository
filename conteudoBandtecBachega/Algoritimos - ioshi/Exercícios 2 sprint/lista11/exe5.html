@@ -26,11 +26,17 @@
         }
     }
     function pesquisar(){
-        var contador =1;
+        var contador = 0;
+        var ordem = [];
+
         for(var indice=0;indice < linhas.length;indice++){
             if(linhas[indice] == qualLinha.value){
-                div_linhas.innerHTML =`Você ja pegou essa linha ${contador} vezes, nessa ordem:`;
                 contador++;
+                ordem.push(indice + 1);
+                div_linhas.innerHTML =`Você ja pegou essa linha ${contador} vezes, nessa ordem: ${ordem}`;
+            } 
+             else{
+                div_linhas.innerHTML =`churruminos`;
             }
         }
     }
