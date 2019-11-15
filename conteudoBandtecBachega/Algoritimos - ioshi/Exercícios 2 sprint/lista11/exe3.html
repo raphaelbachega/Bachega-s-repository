@@ -7,20 +7,36 @@
     <title>Document</title>
 </head>
 <body>
+
+    
     Digite onde você ja morou: <input id="ondeMorou">
     <button onclick="cadastrar()">Cadastrar moradia</button><br><br>
-    <input id="rMoradia">
+    <input id="relembrarMoradia">
+
+
     <button onclick="relembrar()">Relembrar moradia</button>
     <div id="div_moradias"></div>
+
+
+
 </body>
 </html>
 <script>
 var moradias =[];
 function cadastrar(){
     div_moradias.innerHTML ='';
-    moradias.push(ondeMorou);
-    for(indice =0;indice < moradia.lenght;indice++){
-        div_moradias.innerHTML +=;
+    moradias.push(ondeMorou.value);
+    for(indice = 0;indice < moradias.length;indice++){
+        div_moradias.innerHTML +=`${moradias[indice]}<br>`;
+    }
+}
+function relembrar(){
+    var pesquisa = parseInt(relembrarMoradia.value);
+    if(moradias.length < pesquisa){
+        div_moradias.innerHTML =`Voce ainda não morou num ${pesquisa}º bairro`;
+    }
+    else{
+        div_moradias.innerHTML = moradias[pesquisa -1];
     }
 }
 </script>

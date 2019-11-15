@@ -9,23 +9,25 @@
 <body>
     Quais linhas você pegou? <input id="qtdlinhas"><br>
     <button onclick="cadastrar()">Cadastrar</button><br>
-<br>
+
     Qual linha você quer consultar? <input id="qualLinha"><br>
     <button onclick="pesquisar()">Pesquisar</button><br>
     <div id="div_linhas1"></div>
+    <br>
     <div id="div_linhas"></div>
 </body>
 </html>
 <script>
     var linhas =[];
     function cadastrar(){
-        div_linhas.innerHTML ='';
+        div_linhas1.innerHTML ='';
         linhas.push(qtdlinhas.value);
         for(var indice=0;indice < linhas.length;indice++){
-            div_linhas.innerHTML +=`${linhas[indice]}<br>`;
+            div_linhas1.innerHTML +=`${linhas[indice]}<br>`;
         }
     }
     function pesquisar(){
+        div_linhas.innerHTML ='';
         var contador = 0;
         var ordem = [];
 
@@ -36,7 +38,7 @@
                 div_linhas.innerHTML =`Você ja pegou essa linha ${contador} vezes, nessa ordem: ${ordem}`;
             } 
              else{
-                div_linhas.innerHTML =`churruminos`;
+                div_linhas.innerHTML =`Você nunca pegou essa linha`;
             }
         }
     }

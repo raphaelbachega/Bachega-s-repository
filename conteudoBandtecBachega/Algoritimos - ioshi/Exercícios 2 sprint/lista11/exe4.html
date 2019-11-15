@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Diga o nome de cada projeto que ja criou na vida<br>
+    <input id="numProjetos" type="text"><button onclick="registrar()">Registrar projeto</button>
+    <div id="div_projeto"></div>
+    <div id="div_projeto1"></div>
+</body>
+</html>
+<script>
+var projetos = [];
+function registrar(){
+    div_projeto.innerHTML =``;
+projetos.push(numProjetos.value);
+for(contador =0;contador < projetos.length;contador++){
+    div_projeto.innerHTML +=`${projetos[contador]}<br>`;
+}
+ div_projeto.innerHTML +=`Você ja fez ${projetos.length} projetos por isso você é um profissisonal `;
+
+ if(projetos.length >= 0 && projetos.length <5){
+    div_projeto.innerHTML +=`Júnior.<br>`;
+ }
+ else if(projetos.length >= 5 && projetos.length <13){
+    div_projeto.innerHTML +=`Pleno desde o projeto ${projetos[4]}`;
+ }
+ else if(projetos.length >12){
+    div_projeto.innerHTML +=`Sênior desde o projeto ${projetos[12]}`;
+ }
+}
+
+</script>
