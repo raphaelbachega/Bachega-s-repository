@@ -6,7 +6,7 @@ nome varchar(40),
 sexo char(1),
 check (sexo ='m' or sexo = 'f'),
 crea int,
-salario decimal(8,2))auto_increment=1;
+salario decimal(7,2))auto_increment=1;
 select * from engenheiro;
 
 create table obra (
@@ -85,7 +85,9 @@ select * from engenheiro,dependente where idEngenheiro = idDependente and relaci
 select obra.*,engenheiro.*,bancoHoras from engenheiro, trabalha, obra where idEngenheiro = fkEngenheiro and idObra = fkObra;
 
 select * from engenheiro, trabalha, obra where fkengenheiro = idEngenheiro and fkobra = idobra and localObra ='capao redondo';
-select * from engenheiro, trabalha, obra where fkengenheiro = idEngenheiro and fkobra = idobra and idobra =1001;
+select * from Engenheiro, Obra, EngObra where fkEng = idEng and fkObra = idObra and nomeObra='Itaquerão';
 
-select * from engenheiro, dependente, obra, trabalha where idengenheiro = fkdependente and idengenheiro = fkengenheiro and localobra like 'manaus';
+
+
+
 

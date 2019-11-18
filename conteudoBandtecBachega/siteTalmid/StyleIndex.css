@@ -144,10 +144,13 @@ transition-duration: 0.5s;
     color: orange;
     font-size: 110%;
 }
+div .cadastrar{
+display: inline-block;
+justify-content: inherit;
+}
 
 h2{
     text-align: center;
-    /* font-family: 'Trebuchet MS'; */
     font-family: 'Righteous';
     font-size: 150%;
     color: orange;
@@ -157,16 +160,13 @@ h2{
     margin-top: 5vh;
 }
 /* final loginbox */
+
 .carrossel{
     border-color: grey;
-    display: flex;
     border:solid 2px;
-    flex-direction: column;
-    padding: 28vh 25vw;
+    width: 25vw;
+    height: 25vh;
     float: left;
-    margin-left: 10vw;
-    margin-top: 10vh;
-
 }
 footer{
     display: flex;
@@ -179,7 +179,7 @@ width: 30vw;
 height: 30vh;
 border: solid black;
 float: right;
-margin: 5vh;
+margin: 5px;
 }
 /* style scrollBar */
 ::-webkit-scrollbar{
