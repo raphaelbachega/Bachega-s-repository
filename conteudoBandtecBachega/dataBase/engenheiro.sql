@@ -85,9 +85,60 @@ select * from engenheiro,dependente where idEngenheiro = idDependente and relaci
 select obra.*,engenheiro.*,bancoHoras from engenheiro, trabalha, obra where idEngenheiro = fkEngenheiro and idObra = fkObra;
 
 select * from engenheiro, trabalha, obra where fkengenheiro = idEngenheiro and fkobra = idobra and localObra ='capao redondo';
-select * from Engenheiro, Obra, EngObra where fkEng = idEng and fkObra = idObra and nomeObra='Itaquerão';
+select * from Engenheiro, Obra, EngObra where fkEng = idEng and fkObra = idObra and nomeObra='Itaquerão';-- ta errado
 
 
 
+select e.idEngenheiro,
+e.nome,
+d.fkDependente
+from engenheiro as e
+join dependente as d on e.idEngenheiro = d.idDependente;
 
 
+select * from engenheiro, trabalha, obra, dependente where 
+idEngenheiro = idDependente and idEngenheiro = fkEngenheiro and idObra = fkObra;
+
+select sum(salario) from engenheiro;
+select avg(salario) from engenheiro;
+
+select 
+max(salario)  MaxSalario,
+min(salario)  MinSalario
+from engenheiro;
+
+select distinct(salario) from engenheiro;
+select count(salario) from engenheiro;
+
+select e.idEngenheiro,
+e.nome,
+d.fkDependente,
+t.bancoHoras,
+o.localObra
+from engenheiro as e
+join dependente as d on e.idEngenheiro = d.idDependente
+join trabalha as t on e.idEngenheiro = t.fkEngenheiro
+join obra as o on o.idObra = t.fkObra
+limit 1;
+
+select o.localObra,
+e.nome,
+d.fkDependente,
+t.bancoHoras,
+o.localObra
+from engenheiro as e
+join dependente as d on e.idEngenheiro = d.idDependente
+join trabalha as t on e.idEngenheiro = t.fkEngenheiro
+join obra as o on o.idObra = t.fkObra
+limit 1;
+
+select o.localObra,
+e.nome,
+d.fkDependente,
+t.bancoHoras,
+o.localObra
+from engenheiro as e
+join dependente as d on e.idEngenheiro = d.idDependente
+join trabalha as t on e.idEngenheiro = t.fkEngenheiro
+join obra as o on o.idObra = t.fkObra
+limit 1;

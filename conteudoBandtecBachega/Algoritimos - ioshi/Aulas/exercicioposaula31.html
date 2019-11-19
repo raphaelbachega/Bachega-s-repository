@@ -13,12 +13,13 @@
 </html>
 <script>
 function valendo(){
-    var sortear = parseInt(Math.random()*100)+1;
-    for(contador =1;contador < 101;contador++){
-        if(sortear == sort.value){
-            alert(`Foram necessarios ${contador} vezes`);
-        }
+var contador = 1;
+while (contador <=999999){
+    var numero = parseInt(Math.random()*100.1)+1;
+    if(sort.value = numero){
+        alert(`O programa sorteou ${numero} vezes até chegar no numero ${sort.value}`);
+        contador++
     }
-   
+}
 }
 </script>
