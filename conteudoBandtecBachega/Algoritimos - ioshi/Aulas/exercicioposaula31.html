@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     insira um número entre 0 e 100 <input id="sort" type="text">
     <button onclick="valendo()">Valendo</button>
 </body>
+
 </html>
 <script>
-function valendo(){
-var contador = 1;
-while (contador <=999999){
-    var numero = parseInt(Math.random()*100.1)+1;
-    if(sort.value = numero){
-        alert(`O programa sorteou ${numero} vezes até chegar no numero ${sort.value}`);
-        contador++
+    function valendo() {
+        var numero = parseInt(Math.random() * 101);
+        var valor = sort.value;
+        var contador = 1;
+        while (numero != valor) {
+            numero = parseInt(Math.random() * 101);
+            contador++;
+        }
+
+        if (numero == sort.value) {
+            alert(`Foi prciso ${contador} tentativa(s).`);
+        }
     }
-}
-}
 </script>
