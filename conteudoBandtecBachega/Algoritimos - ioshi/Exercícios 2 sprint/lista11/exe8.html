@@ -7,6 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+    Identifique os resultados: 
+    <select id="resultado">
+        <option value="3">Vitória</option>
+        <option value="0">Derrota</option>
+        <option value="1">Empate</option>
+    </select>
+    <br>
+    <button onclick="registrar()">Registrar jogo</button>
+    <div id="div_resultado"></div>
 </body>
 </html>
+<script>
+   var resultados =[];
+function registrar(){
+    resultados.push(parseInt(resultado.value));
+    var total = 0;
+    if()
+
+    for(var contador=0;contador < resultados.length;contador++){
+        total += resultados[contador];
+        div_resultado.innerHTML = `Pontuação total: ${total} pontos`;
+    }
+
+}
+</script>

@@ -9,5 +9,35 @@
 <body>
     Escreva o nome de um filho seu:<br>
     <input id="nomeFilho" type="text"><button onclick="cadastrar()">Cadastrar</button>
+    <br>
+    <button onclick="atualizar()">Atualizar Família</button>
+    <div id="div_filhos"></div>
 </body>
 </html>
+<script>
+    var filhos =[];
+function cadastrar(){
+   
+    var repetido = 0;
+   for(var contador=0;contador < filhos.length;contador++){
+       if(nomeFilho.value == filhos[contador]){
+           repetido++;
+       }
+   }
+   if(repetido >0){
+       alert(`Não pode mais de um filho com o mesmo nome`);
+   }
+   else{
+       filhos.push(nomeFilho.value);
+   }
+}
+function atualizar(){
+    var particular = (filhos.length * 3000).toFixed(2);
+    var publica = (filhos.length * 1500).toFixed(2);
+    var numero = filhos.length;
+
+    div_filhos.innerHTML =`Você tem ${numero} filhos<br>
+    Seu custo mensal será aproximadamente R$${particular} se colocar eles em escola particular ou R$${publica} se eles estudarem em escola pública`;
+
+}
+</script>
