@@ -119,7 +119,7 @@ from engenheiro as e
 join dependente as d on e.idEngenheiro = d.idDependente
 join trabalha as t on e.idEngenheiro = t.fkEngenheiro
 join obra as o on o.idObra = t.fkObra
-limit 1;
+;
 
 select o.localObra,
 e.nome,
