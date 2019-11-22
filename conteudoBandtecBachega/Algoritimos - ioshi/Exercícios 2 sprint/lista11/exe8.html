@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    Identifique os resultados: 
+    Identifique os resultados:
     <select id="resultado">
         <option value="3">Vitória</option>
         <option value="0">Derrota</option>
@@ -15,20 +17,64 @@
     </select>
     <br>
     <button onclick="registrar()">Registrar jogo</button>
-    <div id="div_resultado"></div>
+    <div id="div_resultado"></div><br>
+
+    <input onkeyup="pesquisar()" id="qualjogo">
+    <div id="div_qualjogo"></div>
 </body>
+
 </html>
 <script>
-   var resultados =[];
-function registrar(){
-    resultados.push(parseInt(resultado.value));
-    var total = 0;
-    if()
+    var resultados = [];
+    function registrar() {
+        resultados.push(parseInt(resultado.value));
+        var total = 0;
+        var vitoria = 0;
+        var empate = 0;
+        var derrota = 0;
+        var porcento;
 
-    for(var contador=0;contador < resultados.length;contador++){
-        total += resultados[contador];
-        div_resultado.innerHTML = `Pontuação total: ${total} pontos`;
+
+        for (var contador = 0; contador < resultados.length; contador++) {
+            total += resultados[contador];
+            if (resultados[contador] == 3) {
+                vitoria++;
+            }
+            if (resultados[contador] == 0) {
+                empate++;
+            }
+            if (resultados[contador] == 1) {
+                derrota++;
+            }
+
+
+        }
+        porcento = total / (3 * contador) * 100;
+        div_resultado.innerHTML = `O time teve: ${vitoria} vitórias, ${derrota} empates, ${empate} derrotas<br>
+        Pontuação total: ${total} pontos<br>
+        Aproveitamento:${(porcento).toFixed(0)}%`;
+    }
+    function pesquisar() {
+
+        var valorJogo = Number(qualjogo.value);
+        var resultado = 0;
+        
+        if (resultados.length < valorJogo) {
+            div_qualjogo.innerHTML = `O jogo ${valorJogo} ainda não foi cadastrado`;
+        }
+        else{
+            if(resultados[valorJogo -1] == 3){
+                div_qualjogo.innerHTML = `No ${valorJogo}º jogo o time Ganhou!`;
+            }
+            else if(resultados[valorJogo -1] == 1){
+                div_qualjogo.innerHTML = `No ${valorJogo}º jogo o time patou!`;
+            }
+            else if(resultados[valorJogo -1] == 0){
+                div_qualjogo.innerHTML = `No ${valorJogo}º jogo o time perdeu!`;
+            }
+        }
+
+
     }
 
-}
 </script>

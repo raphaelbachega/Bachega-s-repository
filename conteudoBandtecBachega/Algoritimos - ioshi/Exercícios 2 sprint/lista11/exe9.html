@@ -7,6 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    
+    Nome do produto: <input id="nome_produto" type="text"><br>
+    Preço de compra: <input id="preco_compra" type="text"><br>
+    <button onclick="cadastrar()">Cadastrar</button><br>
+    <button onclick="relatorio()">Relatório de estoque</button><br>
+    <div id="div_relatorio"></div>
 </body>
 </html>
+<script>
+var nomes =[];
+var precos =[];
+function cadastrar(){
+    nomes.push(nome_produto.value);
+    precos.push(Number(preco_compra.value));
+
+}
+function relatorio(){
+    var Total =0;
+    div_relatorio.innerHTML =`Total de produtos:${nomes.length}`;
+
+
+    for(var contador = 0;contador < nomes.length;contador++){
+        
+        total = nomes[contador];
+
+        div_relatorio.innerHTML =`Produto`;
+        
+
+    }
+
+    
+}
+</script>

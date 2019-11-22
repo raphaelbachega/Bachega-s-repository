@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXERCÍCIO 9</title>
+</head>
+<body>
+
+    <h2>Loja virtual</h2> <br><br>
+
+    <input id = "produto" autofocus placeholder="Nome do produto"> <br><br>
+    
+    <input id = "preco" placeholder="Preço da compra"> <br><br>
+
+    <button onclick = "cadastrar()">Cadastrar</button>
+
+    <button onclick="relatorio()">Relatório de estoque</button> <br><br>
+
+    <div id = "div_resultado"></div>
+    
+</body>
+</html>
+
+<script>
+
+    var produtos = [];
+    var precos = [];
+
+    function cadastrar()
+    {
+        var num_precos = Number(preco.value);
+        produtos.push(produto.value);
+        precos.push(num_precos);
+    }
+
+    function relatorio()
+    {
+        var valor_produto = 0;
+        var resultado = '';
+        div_resultado.innerHTML = `Total de produtos: ${produtos.length} <br><br>`;
+
+        for (indice = 0; indice < produtos.length; indice++)
+        {
+            valor_produto = precos[indice];
+
+            div_resultado.innerHTML += `Produto ${indice + 1}: ${produtos[indice]} <br> Preço de compra: ${valor_produto}. Vender por: ${valor_produto * 1.25} <br><br>`;
+        }
+    }
+
+</script>
