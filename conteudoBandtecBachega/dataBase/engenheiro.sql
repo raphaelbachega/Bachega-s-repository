@@ -129,8 +129,7 @@ o.localObra
 from engenheiro as e
 join dependente as d on e.idEngenheiro = d.idDependente
 join trabalha as t on e.idEngenheiro = t.fkEngenheiro
-join obra as o on o.idObra = t.fkObra
-limit 1;
+join obra as o on o.idObra = t.fkObra and idObra =1000;
 
 select o.localObra,
 e.nome,
@@ -138,7 +137,8 @@ d.fkDependente,
 t.bancoHoras,
 o.localObra
 from engenheiro as e
-join dependente as d on e.idEngenheiro = d.idDependente
-join trabalha as t on e.idEngenheiro = t.fkEngenheiro
-join obra as o on o.idObra = t.fkObra
-limit 1;
+ left join dependente as d on e.idEngenheiro = d.idDependente
+left join trabalha as t on e.idEngenheiro = t.fkEngenheiro
+left join obra as o on o.idObra = t.fkObra;
+
+
