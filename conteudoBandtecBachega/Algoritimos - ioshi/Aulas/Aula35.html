@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Interrução brusca de uma iteração</h2>
+
+    numero entra 1 e 50:<input id="numero" type="text"><br>
+    <button onclick="sortear()">sortear</button>
+    <button onclick="sortear_limitado()">sortear ate 20</button>
+    <div id="resultado"></div>
+
+</body>
+</html>
+<script>
+function sortear(){
+    var sorteios = 0;
+    var valor_numero = parseInt(numero.value)
+
+    while (true) {
+        var sorteado= parseInt(Math.random()*50+1);
+        sorteios++;
+        if (valor_numero == sorteado){
+            break;
+        }
+    }
+
+    resultado.innerHTML = `Foram necessarios ${sorteios} sorteios`;
+}
+function sortear_limitado(){
+    var sorteios = 0;
+    var valor_numero = parseInt(numero.value)
+    var sortudo = false;
+    for(var tentativa = 0;tentativa <20; tentativa++) {
+        var sorteado= parseInt(Math.random()*50+1);
+        sorteios++;
+        if (valor_numero == sorteado){
+            sortudo = true;
+            break;
+        }
+    }
+    if(sortudo){
+    resultado.innerHTML = `Foram necessarios ${sorteios} sorteios`;
+    }
+    else{
+        resultado.innerHTML = `Nem com 20 sorteios conseguiu!`;
+    }
+}
+
+</script>

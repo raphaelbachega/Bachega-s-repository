@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Continuada 3</h1>
+
+    Informe o nome do astronauta: <input id="idastronauta" type="text"><br>
+    Informe a quantidade de dias: <input id="qtddia" type="text"><br>
+    Informe a quantidade de horas: <input id="qtdhora" type="text"><br>
+    Informe a quantidade de minutos: <input id="qtdmin" type="text"><br>
+    <button onclick="registrar()">Registrar viagem</button><br>
+    <button onclick="gerar_relatorio()">Relatório de viagens</button>
+    <div id="div_relatorio"></div>
+</body>
+
+</html>
+<script>
+    var astronauta = [];
+    var dias = [];
+    var horas = [];
+    var mins = [];
+
+
+
+    function registrar() {
+
+
+        if (qtddia.value < 0 || qtdhora.value < 0 || qtdmin.value < 0) {
+            alert(`Informe um tempo de viagem válido!`);
+        }
+        else if (qtddia.value == 0 && qtdhora.value == 0 && qtdmin.value == 0) {
+            alert(`Informe um tempo de viagem válido!`);
+        }
+        else {
+            astronauta.push(idastronauta.value);
+            dias.push(Number(qtddia.value));
+            horas.push(Number(qtdhora.value));
+            mins.push(Number(qtdmin.value));
+        }
+
+    }
+
+    function gerar_relatorio() {
+        div_relatorio.innerHTML = '';
+
+        
+
+        for (var contador = 0; contador < astronauta.length; contador++) {
+            var tempodias = dias[contador] * 1440;
+            var tempohoras = horas[contador] * 60;
+            var tempomins = mins[contador];
+            var tempototal = (tempodias + tempohoras + tempomins) * 45;
+            var tempoterra = parseInt(tempototal / 525600);
+            var imagem='';
+
+            div_relatorio.innerHTML +=` Foram registradas ${contador+1} viagens, detalhadas a seguir:<br>
+            Viagem ${contador+1}:<br>
+            Astronauta ${astronauta[contador]} ficou fora por pelo menos ${tempoterra} anos no tempo da Terra.
+            A criança que nasceu quando ele saiu provavelmente está assim:<br><br>`;
+
+            if(tempoterra <=13){
+                imagem =`<img src='bart1.png'>`;
+            }
+            else if(tempoterra <=30){
+                imagem =`<img src='bart2.png'>`;
+            }
+            else if(tempoterra <=65){
+                imagem =`<img src='bart3.png'>`;
+            }
+            else if(tempoterra <=110){
+                imagem =`<img src='bart4.png'>`;
+            }
+            else{
+                imagem =`<img src='bart5.png'>`;
+            }
+            div_relatorio.innerHTML +=`${imagem}`;
+        }
+    }
+</script>

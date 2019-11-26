@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    nome do pais: <input id="nome_pais"><br>
+    habitantes do pais: <input id="habitantes_pais"><br>
+    grau de liberdade economica: <input id="grau_pais">
+    <button onclick="cadastrarpais()">Cadastrar pais</button>
+
+
+</body>
+
+</html>
+<script>
+var paisnome = [];
+var paispopulacao = [];
+var paisliberdade = [];
+    function cadastrarpais() {
+        var nome =;
+        var habitantes =; 
+        var grauiberdade =; 
+
+        if (habitantes < 100 || paisliberdade < 0 || paisliberdade > 100) {
+            alert(`Entradas inválidas`);
+        }
+        else {
+            paisnome.push();
+            paispopulacao.push();
+            paisliberdade.push();
+        }
+    }
+</script>
