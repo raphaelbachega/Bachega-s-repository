@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Talmid</title>
-<link rel="stylesheet" href="./StyleIndex.css">
-<script src="scriptindex.js"></script>
-<script src="https://kit.fontawesome.com/3d37e29233.js" crossorigin="anonymous"></script>
-<link rel="icon" type="imagem/png" href="./imagens/iconbook.png" />
+    <link rel="stylesheet" href="./StyleIndex.css">
+    <script src="scriptindex.js"></script>
+    <link rel="icon" type="imagem/png" href="./imagens/iconbook.png" />
 
 </head>
+
 <body>
     <!-- header -->
     <header>
         <div class="logo"><a href="./index.html"><img src="imagens/logo.png"></a></div>
     </header>
-
-    <div class="subNav">
-        <div class="divBar">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Patrocinadores</a></li>
-        </ul>
+    <nav>
+        <div class="subNav">
+            <div style="display: none" id="botoes1" class="divBar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Patrocinadores</a></li>
+                </ul>
+            </div>
+            <div class="livroIconePosition">
+                <img onclick="openBook()" src="./imagens/menu.png" alt="">
+            </div>
+            <div style="display: none" id="botoes" class="divBar">
+                <ul>
+                    <li><a href="">O que somos?</a></li>
+                    <li><a href="">Estatísticas</a></li>
+                </ul>
+            </div>
         </div>
-        <ul>
-            <li class="livroIcone"><i onclick="openBook()" class="fas fa-book fa-3x"></i>
-            </li>
-        </ul> 
-        <div class="divBar">
-        <ul>
-            <li><a href="">O que somos?</a></li>
-            <li><a href="">Estatísticas</a></li>
-        </ul>
-        </div>
-    </div>
+    </nav>
     <!-- header -->
 
 
     <!-- corpo -->
     <div class="allScreen">
 
-            <div class="loginBox">
-                <h2>Login</h2><br>
-                <input class="inpLogin" placeholder="E-Mail"id="email" type="text"><br>
-                <input class="inpLogin" placeholder="Senha" id="senha" type="password"><br>
-                <button>Entrar</button><br>
-                <div class="divlinkSenha">
-                    <a class="linkSenha" href="">Esqueceu sua senha?</a><br>
-                    <div class="cadastrar">
-                    <a  href="">Cadastre-se</a>
-                    </div>
-                </div>
-                
-<div id="slide" class="carrossel" >
-                <img src="imagens/studyChild.jpeg" alt="">
+        <div class="loginBox">
+            <h2>Login</h2><br>
+            <input class="inpLogin" placeholder="E-Mail" id="email" type="text"><br>
+            <input class="inpLogin" placeholder="Senha" id="senha" type="password"><br>
+            <button>Entrar</button><br>
+            <div class="divlinkSenha">
+                <a class="linkSenha" href="">Esqueceu sua senha?</a><br>
             </div>
 
-            </div>
-            
-            
 
-            
-            <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/HndV87XpkWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            
+
+        </div>
+
+        <div id="slide" class="carrossel">
+            <img src="imagens/studyChild.jpeg" alt="">
+        </div>
+
+
+        <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/HndV87XpkWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
     </div>
     <!-- corpo -->
 
@@ -77,8 +75,10 @@
     <!-- footer -->
     <footer>
         <div class="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2858088401936!2d-46.66374138551869!3d-23.558176484684456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59905987b185%3A0x694b9d3b5828073f!2sBandTec%20-%20Faculdade%20de%20Tecnologia%20Bandeirantes!5e0!3m2!1spt-BR!2sbr!4v1570383621973!5m2!1spt-BR!2sbr" frameborder="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2858088401936!2d-46.66374138551869!3d-23.558176484684456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59905987b185%3A0x694b9d3b5828073f!2sBandTec%20-%20Faculdade%20de%20Tecnologia%20Bandeirantes!5e0!3m2!1spt-BR!2sbr!4v1570383621973!5m2!1spt-BR!2sbr"
+                frameborder="0"></iframe>
         </div>
     </footer>
 </body>
+
 </html>
