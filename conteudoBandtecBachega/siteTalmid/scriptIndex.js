@@ -1,4 +1,6 @@
 function openBook(){
-botoes.style.display = 'block';
-botoes1.style.display = 'block';
+    var x = document.getElementsByClassName(".divBar");
+    var x1 = document.getElementsByClassName(".divBar");
+        x.style.display ='block';
+        x1.style.display = 'block';
 }
