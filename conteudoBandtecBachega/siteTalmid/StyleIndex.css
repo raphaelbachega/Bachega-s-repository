@@ -8,6 +8,7 @@ html{
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    scroll-behavior: smooth;
 }
 header{
     height: 18vh;
@@ -73,7 +74,10 @@ ul li a{
 .divBar{
     margin-left: 10px;
     margin-right: 10px;
-    display: none;
+    animation: normal;
+    animation-direction: initial;
+    animation-duration: 400ms;
+
 }
 .divBar li a{
     color: rgb(255, 166, 0);
@@ -173,12 +177,110 @@ h2{
 /* inicio slideshow */
 
 .carrossel{
-    border-color: grey;
-    border:solid 2px;
-    width: 25vw;
-    height: 25vh;
+    border:solid 2vw rgba(0, 0, 0, 0.548);
+    width: 50vw;
+    height: 60vh;
+    float: left;
+    margin-top: 4%;
+    margin-left: 6%;
+}
+.carrossel img{
+    width: 100%;
+    height: 100%;
 }
 /* final slideshow */
+/* inicio sobre nós */
+
+.divisoria{
+    border:solid 2vh rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.699);
+    height: 8vh;
+    display: flex;
+    font-family: 'Righteous';
+    font-size: 250%;
+    color: orange;
+    justify-content: center;
+
+}
+.video{
+    border:solid 2vw rgba(0, 0, 0, 0.548);
+    width: 50vw;
+    height: 60vh;
+    margin-top: 2%;
+    margin-left: 20vw;
+    margin-bottom: 2%;
+}
+.sobreNos{
+    border-radius: 20px;
+    height: 55vh;
+    width:90%;
+    float: left;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.801);
+    font-family: 'Righteous';
+    font-size: 190%;
+    color: orange;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 5vh;
+    padding: 1%;
+}
+.patrocinadores{
+    border-radius: 20px;
+    height: auto;
+    width:90%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.801);
+    font-family: 'Righteous';
+    font-size: 190%;
+    color: orange;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 5vh;
+    margin-bottom: 2%;
+}
+.idpat img{
+    width: 25%;
+    height: 25%;
+}
+.dash{
+    border-radius: 20px;
+    height: 55vh;
+    width:90%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.801);
+    font-family: 'Righteous';
+    font-size: 190%;
+    color: orange;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 5vh;
+    margin-bottom: 2%;
+}
+
+.buttoncad{
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    border-bottom:solid 1px orange;
+    color: orange;
+    font-size: 100%;
+    font-weight: 500;
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    outline: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+}
+.buttoncad:hover{
+    background-color: orange;
+    border: orange;
+    color: white;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+}
 
 /* inicio footer */
 
@@ -186,7 +288,6 @@ footer{
     display: flex;
     height: auto;
     background-color:rgba(78, 78, 78, 0.808);
-    flex-direction: column;
 }
 .maps iframe{
 width: 30vw;

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+/* Inicio do estilo site Index */
+body{
+    margin: 0;
+}
+html{
+    background-image: url(imagens/1604518.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header{
+    height: 18vh;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+ul li a{
+    margin: 0;
+    padding: 0;
+}
+/* inicio das configurações do logo e sua mecânica */
+.logo{
+    height: 18vh;
+    width: 60vw;
+    margin-left: 20vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.logo img{
+    
+    transition-duration: 0.5s;
+    transform: scale(1.0);
+}
+.logo img:hover{
+    transition-duration: 0.5s;
+    transform: scale(0.9);
+}
+/* inicio da construção da subnav e menu */
+
+.subNav{
+    height: 8.5vh;
+    background-color:rgba(78, 78, 78, 0.808);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.subNav ul li{
+    display: inline-block;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.subNav ul li:hover{
+    color: rgb(243, 145, 17);
+    cursor: pointer;
+}
+.livroIconePosition{
+    position:absolute; 
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+.livroIconePosition img{
+    width: 60px;
+}
+.livroIconePosition:hover{
+ transition: 0.5s;
+ transition-duration: 0.5s;
+ transform: scale(1.3);
+}
+
+/* espaçamento */
+.divBar{
+    margin-left: 10px;
+    margin-right: 10px;
+    animation: normal;
+    animation-direction: initial;
+    animation-duration: 400ms;
+
+}
+.divBar li a{
+    color: rgb(255, 166, 0);
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Trebuchet MS'; 
+    font-weight: 900;
+    display: inline;
+}
+.divBar li a:hover{
+    color: rgb(255, 255, 255);
+}
+/* construção do conteúdo */
+.allScreen{
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+.idbox{
+    border-radius: 20px;
+    width: 30vw;
+    margin: 3%;
+    background-color: rgba(0, 0, 0, 0.801);
+    text-align: center;
+
+}
+.fotoperfil{
+    background-color: rgba(0, 0, 0, 0);
+    border: orange solid 2px;
+    width: 30%;
+    height: 25%;
+    margin-top: 4%;
+    margin-left: 32.5%;
+    border-radius: 50%;
+}
+.fotoperfil img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.dadosperfil{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0.5) solid 0.5vw;
+    width: 90%;
+    height: 50%; 
+    margin-top: 4%;
+    margin-left: 3%;
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+.sair{
+border: rgba(0, 0, 0, 0) 2px solid;
+background-color: rgba(0, 0, 0, 0.233);
+text-decoration-line: none;
+color: orange;
+font-family: 'Trebuchet MS';
+font-size: 150%;
+padding: 1%;
+border-radius: 20px;
+
+}
+.sair:hover{
+    border-radius: 20px;
+    background-color: rgba(255, 145, 0, 0.699);
+    transition: 500ms;
+    color: white;
+
+}
+
+
+/* inicio footer */
+
+footer{
+    display: flex;
+    height: auto;
+    background-color:rgba(78, 78, 78, 0.808);
+}
+.maps iframe{
+width: 30vw;
+height: 30vh;
+border: solid black;
+float: right;
+margin: 5px;
+}
+/* style scrollBar */
+::-webkit-scrollbar{
+    width: 0.6vw;
+    background-color: rgb(78, 78, 78);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(243, 145, 17, 0.60);
+}
+::-webkit-scrollbar-button{
+    background-color: rgb(31, 31, 31);
+}
