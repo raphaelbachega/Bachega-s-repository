@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+/* Inicio do estilo site Index */
+body{
+    margin: 0;
+}
+html{
+    background-image: url(imagens/oneway.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header{
+    height: 18vh;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+ul li a{
+    margin: 0;
+    padding: 0;
+}
+/* inicio das configurações do logo e sua mecânica */
+.logo{
+    height: 18vh;
+    width: 60vw;
+    margin-left: 20vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.logo img{
+    
+    transition-duration: 0.5s;
+    transform: scale(1.0);
+}
+.logo img:hover{
+    transition-duration: 0.5s;
+    transform: scale(0.9);
+}
+
+/* construção do conteúdo */
+.allScreen{
+    height: auto;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+.idbox{
+    border-radius: 20px;
+    width: 30vw;
+    height: 30vh;
+    margin: 3%;
+    background-color: rgba(0, 0, 0, 0.801);
+    text-align: center;
+
+}
+.cadastrese{
+    text-align: center;
+    font-family: 'Righteous';
+    font-size: 150%;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 20vw;
+    margin: auto;
+    margin-top: 5vh;
+}
+input{
+    width: 20vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: double;
+    padding: 6px;
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    outline: none;
+    margin-top: 5%;
+    text-align: center;
+}
+::-webkit-input-placeholder{
+    color:rgba(255, 166, 0, 0.514);
+    text-align: center;
+    font-weight: 500;
+}
+input:hover{
+    background-color: rgba(255, 166, 0, 0.253);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+
+}
+.botao{
+    margin-top: 5%;
+}
+.enviar{
+    border: rgba(0, 0, 0, 0) 2px solid;
+    background-color: rgba(0, 0, 0, 0.233);
+    text-decoration-line: none;
+    color: orange;
+    font-family: 'Trebuchet MS';
+    font-size: 100%;
+    padding: 1%;
+    border-radius: 20px;
+    margin-top: auto;
+}
+.enviar:hover{
+    border-radius: 20px;
+    background-color: rgba(255, 145, 0, 0.699);
+    transition: 500ms;
+    color: white;
+
+}
+
+/* inicio footer */
+
+footer{
+    display: flex;
+    height: 15vh;
+    background-color:rgba(78, 78, 78, 0.808);
+}
+
+/* style scrollBar */
+::-webkit-scrollbar{
+    width: 0.6vw;
+    background-color: rgb(78, 78, 78);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(243, 145, 17, 0.60);
+}
+::-webkit-scrollbar-button{
+    background-color: rgb(31, 31, 31);
+}

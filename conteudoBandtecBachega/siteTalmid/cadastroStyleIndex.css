@@ -4,7 +4,7 @@ body{
     margin: 0;
 }
 html{
-    background-image: url(imagens/1604518.jpg);
+    background-image: url(imagens/globo1.jpg);
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -161,19 +161,30 @@ select{
 
 
 /* inicio footer */
-
 footer{
-    display: flex;
-    height: auto;
+    height:auto;
     background-color:rgba(78, 78, 78, 0.808);
+    width: 100%;
+    display: flex;
+}
+/* tamanho dos icones */
+.redesocial img{
+    width: 5vw;
+    display: list-item;
+
+}
+.footerconteudo{
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
 .maps iframe{
 width: 30vw;
-height: 30vh;
+height: 40vh;
 border: solid black;
-float: right;
 margin: 5px;
 }
+
 /* style scrollBar */
 ::-webkit-scrollbar{
     width: 0.6vw;
