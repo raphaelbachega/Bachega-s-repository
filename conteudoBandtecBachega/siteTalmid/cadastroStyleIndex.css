@@ -118,7 +118,7 @@ ul li a{
 input{
     width: 20vw;
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(0, 0, 0);
+    color: orange;
     font-weight: 700;
     border-top: none;
     border-left: none;
@@ -143,17 +143,26 @@ input:hover{
 
 }
 label{
-   color: orange;
-   margin-top: 1%;
-   margin-top: 5%;
+    color: orange;
+    padding: 1%;
+    font-family: 'Trebuchet MS';
 }
 select{
     color: orange;
     outline: none;
-    width: 50%;
     padding: 1%;
     border-radius: 20px;
     font-family: 'Trebuchet MS';
+}
+option{
+    text-align: center;
+}
+.confirmar{
+    border-radius: 20%;
+    border: solid 2px;
+    color: orange;
+    
+
 }
 
 
