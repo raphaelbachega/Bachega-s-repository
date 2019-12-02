@@ -180,6 +180,7 @@ h2{
 /* inicio slideshow */
 
 .carrossel{
+    border-radius: 20px;
     border:solid 2vw rgba(0, 0, 0, 0.548);
     width: 50vw;
     height: 60vh;
@@ -193,7 +194,7 @@ h2{
     height: 100%;
 }
 .slideslide{
-    display: none;
+    
 }
 /* final slideshow */
 /* inicio sobre nós */
@@ -210,6 +211,7 @@ h2{
 
 }
 .video{
+    border-radius: 20px;
     border:solid 2vw rgba(0, 0, 0, 0.548);
     width: 50vw;
     height: 60vh;
@@ -267,7 +269,8 @@ h2{
 
 .buttoncad{
     background-color: rgba(0, 0, 0, 0);
-    border-style: none;
+    border-style: solid;
+    border-color: orange;
     border-bottom:solid 1px orange;
     color: orange;
     font-size: 100%;
