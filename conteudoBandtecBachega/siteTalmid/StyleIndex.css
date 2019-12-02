@@ -186,10 +186,14 @@ h2{
     float: left;
     margin-top: 4%;
     margin-left: 6%;
+    display: flex;
 }
 .carrossel img{
     width: 100%;
     height: 100%;
+}
+.slideslide{
+    display: none;
 }
 /* final slideshow */
 /* inicio sobre nós */
@@ -283,6 +287,15 @@ h2{
     border-bottom: solid 1px rgb(255, 255, 255);
     transition: 0.5s;
     transition-duration: 0.5s;
+}
+.seta{
+    position: fixed;
+    top: 2%;
+    left: 0.5%;
+    margin:0;
+    padding: 0;
+    width: 4vw;
+
 }
 
 /* inicio footer */

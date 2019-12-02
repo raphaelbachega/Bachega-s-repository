@@ -10,12 +10,12 @@
     <script src="https://kit.fontawesome.com/3d37e29233.js" crossorigin="anonymous"></script>
     <script src="scriptindex.js"></script>
     <link rel="icon" type="imagem/png" href="./imagens/iconbook.png" />
-
+    
 </head>
 
 <body>
     <!-- header -->
-    <header>
+    <header id="head">
         <div class="logo"><a href="./index.html"><img src="imagens/logo.png"></a></div>
     </header>
     <nav>
@@ -23,7 +23,7 @@
             <div id="botoes1" class="divBar">
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="#patro">Patrocinadores</a></li>
+                    <li><a href="#somos">O que somos?</a></li>
                 </ul>
             </div>
             <div class="livroIconePosition">
@@ -31,7 +31,7 @@
             </div>
             <div id="botoes" class="divBar">
                 <ul>
-                    <li><a href="#somos">O que somos?</a></li>
+                    <li><a href="#patro">Patrocinadores</a></li>
                     <li><a href="#estat">Estatísticas</a></li>
                 </ul>
             </div>
@@ -39,7 +39,7 @@
     </nav>
     <!-- header -->
 
-
+    
 
 
 
@@ -66,8 +66,11 @@
         </div>
 
 
-        <div id="slide" class="carrossel">
-            <img src="imagens/studyChild.jpeg" alt="">
+        <div class="carrossel">
+            <img onfocus="slideshow()" class="slideslide" id="imagem" src="imagens/studyChild.jpeg" alt="">
+            <img onfocus="slideshow()" class="slideslide" id="imagem" src="imagens/coffeestudy.jpeg" alt="">
+            <img onfocus="slideshow()" class="slideslide" id="imagem" src="imagens/city.jpg" alt="">
+            <img onfocus="slideshow()" class="slideslide" id="imagem" src="imagens/1604518.jpg" alt="">
         </div>
     </div>
 
@@ -109,6 +112,9 @@
     </div>
 
     <a href="cadastro.html"><button class="buttoncad">Cadastre-se</button></a>
+
+
+    <a href="#head"><img class="seta" src="imagens/refresh_arrow_6296.ico" alt=""></a>
 
     <!-- corpo -->
 

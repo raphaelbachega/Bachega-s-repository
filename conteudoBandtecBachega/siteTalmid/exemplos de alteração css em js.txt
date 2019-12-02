@@ -1,0 +1,6 @@
+var clique = document.getElementById("btn-menu"); 
+    var menuLateral = document.getElementById("menu-lateral");
+
+    clique.onclick = function(){
+        document.menuLateral.style.marginLeft = "0";
+    };
