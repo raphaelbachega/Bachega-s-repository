@@ -194,7 +194,8 @@ h2{
     height: 100%;
 }
 .slideslide{
-    
+    display: block;
+    width: 100%;
 }
 /* final slideshow */
 /* inicio sobre nós */

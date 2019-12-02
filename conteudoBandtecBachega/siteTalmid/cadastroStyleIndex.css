@@ -103,6 +103,7 @@ ul li a{
     margin: 3%;
     background-color: rgba(0, 0, 0, 0.801);
     text-align: center;
+    justify-content: center;
 
 }
 .cadastrese{
@@ -153,18 +154,26 @@ select{
     padding: 1%;
     border-radius: 20px;
     font-family: 'Trebuchet MS';
+    background-color: rgba(0, 0, 0, 0);
+    border-color: orange;
 }
 option{
     text-align: center;
 }
 .confirmar{
-    border-radius: 20%;
-    border: solid 2px;
     color: orange;
+    padding: 2%;
     
-
 }
-
+.boxconfirmar{
+    margin-top: 2%;
+    border: solid 2px orange;
+    width: 30%;
+    padding: 2%;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 33.3%;
+}
 
 
 
