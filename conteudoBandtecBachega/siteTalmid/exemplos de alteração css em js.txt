@@ -6,3 +6,7 @@
     clique.onclick = function(){
         document.menuLateral.style.marginLeft = "0";
     };]
+
+
+
+slidescarnival.com/pt-br/modelo-de-apresentacao-gratis-gower/3302
