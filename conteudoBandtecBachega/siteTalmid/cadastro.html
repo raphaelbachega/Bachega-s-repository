@@ -34,10 +34,10 @@
     <div class="allScreen">
 
         <div class="idbox">
-            <div class="cadastrese">Cadastre-se</div>
+                <div class="cadastrese">Cadastre-se</div>
             <div>
-                <input id="nome" placeholder="Nome completo" type="text"><br><br>
-                
+                    <form name="form_login" method="POST" onsubmit="return entrar();">
+                <input id="nome" placeholder="Nome completo" name="nome" type="text"><br><br>
                 <label for="interesse">Selecione seu interesse<br>
                 <select name="interesse" id="interesse">
                     <option value="">--Selecione Aqui--</option>
@@ -48,13 +48,13 @@
                     <option value="gastronomia">Gastronomia</option>
                 </select><br> 
                 </label>
-                <input id="login" placeholder="E-Mail" type="text">
-                <input id="senha" placeholder="Senha" type="password">
-                <input id="confsenha" placeholder="Confirmar Senha" type="password">
+                <input id="login" name="login" placeholder="E-Mail" type="text">
+                <input id="senha" name="senha" placeholder="Senha" type="password">
             </div>
-            <div class="boxconfirmar">
-            <a class="confirmar" href="login.html">Confirmar</a>
-            </div>
+            
+           <button type="submit" class="confirmar">Confirmar</button>
+            
+                </form>
         </div>
 
     </div>

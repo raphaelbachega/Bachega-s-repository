@@ -168,19 +168,20 @@ option{
     text-decoration-line: none; 
     font-family: 'Public Sans'
 }
-.boxconfirmar:hover{
+button:hover{
     transition: 400ms;
     transform: scale(1.2);
     background-color:rgba(255, 166, 0, 0.5);
 }
-.boxconfirmar{
-    margin-top: 2%;
+button{
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    margin-top: 10%;
     border: solid 2px orange;
     width: 30%;
     padding: 2%;
     border-radius: 20px;
     align-items: center;
-    margin-left: 33.3%;
     transition: 400ms;
     transform: scale(1.0);
 }

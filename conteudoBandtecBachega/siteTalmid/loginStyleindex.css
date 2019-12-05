@@ -4,7 +4,7 @@ body{
     margin: 0;
 }
 html{
-    background-image: url(imagens/city.jpg);
+    background-image: url(imagens/livreiro.jpg);
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -17,6 +17,41 @@ ul li a{
     margin: 0;
     padding: 0;
 }
+/* inicio da construção da subnav e menu */
+
+.subNav{
+    height: 8.5vh;
+    background-color:rgba(78, 78, 78, 0.808);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.subNav ul li{
+    display: inline-block;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.subNav ul li:hover{
+    color: rgb(243, 145, 17);
+    cursor: pointer;
+}
+.livroIconePosition{
+    position:absolute; 
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+.livroIconePosition img{
+    width: 60px;
+}
+.livroIconePosition:hover{
+ transition: 0.5s;
+ color: orange;
+ transition-duration: 0.5s;
+ transform: scale(1.3);
+}
+
 /* inicio das configurações do logo e sua mecânica */
 .logo{
     height: 18vh;
@@ -153,16 +188,28 @@ border-radius: 20px;
 
 /* inicio footer */
 
+/* inicio footer */
 footer{
-    display: flex;
-    height: auto;
+    height:auto;
     background-color:rgba(78, 78, 78, 0.808);
+    width: 100%;
+    display: flex;
+}
+/* tamanho dos icones */
+.redesocial img{
+    width: 5vw;
+    display: list-item;
+
+}
+.footerconteudo{
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
 .maps iframe{
 width: 30vw;
-height: 30vh;
+height: 40vh;
 border: solid black;
-float: right;
 margin: 5px;
 }
 /* style scrollBar */
