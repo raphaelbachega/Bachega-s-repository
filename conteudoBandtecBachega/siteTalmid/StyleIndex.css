@@ -109,6 +109,7 @@ ul li a{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.301);
 }
+
 input{
     width: 20vw;
     background-color: rgba(0, 0, 0, 0);
@@ -137,18 +138,18 @@ input:hover{
 
 }
 button{
-background-color: rgba(0, 0, 0, 0);
-border-style: none;
-border-bottom:solid 1px orange;
-color: orange;
-font-size: 100%;
-font-weight: 500;
-padding: 1.5vh 4vw;
-transition: 0.5s;
-transition-duration: 0.5s;
-outline: none;
-cursor: pointer;
-margin-top: 5vh;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    border-bottom:solid 1px orange;
+    color: orange;
+    font-size: 100%;
+    font-weight: 500;
+    padding: 1.5vh 4vw;
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5vh;
 }
 button:hover{
 background-color: orange;
