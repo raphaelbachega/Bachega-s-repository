@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Quantos torcedores do Guaraní vão ajudar? <input id="quantGuarani" type="number"><br>
+    Quantos torcedores da Ponte Preta vão ajudar? <input id="quantPonte" type="number"><br><br>
+    Qual o preço da camisa do Guarani? <input id="valorGuarani" type="number"><br>
+    Qual o preço da camisa da Ponte Preta? <input id="valorPonte" type="number"><br>
+    <button onclick="fazer()">Criança Feliz</button>
+    <div id="div_frase" ></div>
+    <div id="div_total" ></div>
+
+</body>
+</html>
+<script>
+function fazer(){
+    div_frase.innerHTML ='';
+    div_total.innerHTML ='';
+    var guarani = quantGuarani.value;
+    var ponte = quantPonte.value;
+    var precoG = valorGuarani.value;
+    var precoP = valorPonte.value;
+    var contadorG = Number(1);
+    var contadorP = Number(1);
+    
+    if(guarani < Number(0) || ponte < Number(0) || precoG < Number(2) || precoP < Number(2)){
+    if(guarani < Number(0) || ponte < Number(0)){
+        div_frase.innerHTML =`<b>Onde já se viu quantidade negativa de torcedores?</b><br>`;
+    }
+    if(precoG < Number(2) || precoP < Number(2)){
+        div_frase.innerHTML +=`<b>Camisa desse preço é pirata!!!</b><br>`;
+    }
+    }
+    else{
+    while(contadorG <= guarani){
+        div_frase.innerHTML +=`<br><b>${contadorG}º torcedor do Guaraní ganhando sua camisa verde</b><br>`;
+        if(contadorG % 2 == 0){
+            div_frase.innerHTML += `<br><img src="guaraniverde.jpg"><br>`;
+        }
+        if(contadorG % 2 == 1){
+            div_frase.innerHTML += `<br><img src="guaranibranca.jpg"><br>`;
+        }
+        contadorG++;
+    }
+    while(contadorP <= ponte){
+        div_frase.innerHTML +=`<br><b>${contadorP}º torcedor da Ponte Preta ganhando sua camisa alvinegra</b><br>`;
+        if(contadorP % 2 == 0){
+            div_frase.innerHTML += `<br><img src="pontepretapreta.jpg"><br>`;
+        }
+        if(contadorP % 2 == 1){
+            div_frase.innerHTML += `<br><img src="pontepretabranca.jpg"><br>`;
+        }
+        contadorP++;
+    }
+    var totalGuarani = Number(precoG) * Number(guarani);
+    var totalPonte = Number(precoP) * Number(ponte);
+    var total = Number(totalGuarani) + Number(totalPonte);
+    div_total.innerHTML += `<b>Subtotal com torcedores do Guarani: R$${totalGuarani.toFixed(02)}</b><br>`;
+    div_total.innerHTML += `<b>Subtotal com torcedores da Ponte Preta: R$${totalPonte.toFixed(02)}</b><br>`;
+    div_total.innerHTML += `<b>Total: R$${total.toFixed(02)}</b>`;
+    if(totalGuarani > totalPonte){
+        div_total.innerHTML +=`<br><b>Vai gastar mais com os torcedores do Guarani</b>`;
+    }
+    if(totalGuarani < totalPonte){
+        div_total.innerHTML +=`<br><b>Vai gastar mais com os torcedores da Ponte preta</b>`;
+    }
+    if(totalGuarani == totalPonte){
+        div_total.innerHTML +=`<br><b>Vai gastar o mesmo com ambos</b>`;
+    }
+}
+}
+
+</script>
