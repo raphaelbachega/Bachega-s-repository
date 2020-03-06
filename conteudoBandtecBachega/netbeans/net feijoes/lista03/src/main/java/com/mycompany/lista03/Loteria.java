@@ -21,22 +21,13 @@ public class Loteria {
         Scanner leitor = new Scanner(System.in);
         System.out.println("Digite um número entre 0 e 10:");
         num = leitor.nextInt();
-          cont = 0;
-        
-          sort = aleatorio.nextInt(11);
-          
-          while(!sort.equals(num)){
-              sort = aleatorio.nextInt(11);
-              System.out.println(sort);
-              cont++;
-          }
-          
-//        do{
-//        sort = aleatorio.nextInt(11);
-//      
-//        cont ++;
-//            System.out.println(sort); 
-//        }while(!sort.equals(num));          
+          cont = 1;
+        do{
+        sort = aleatorio.nextInt(11);
+      
+        cont ++;
+            System.out.println(sort); 
+        }while(!sort.equals(num));          
             
         
         if(cont <= 3 ){

@@ -11,23 +11,17 @@ import java.util.Scanner;
  *
  * @author rapha
  */
-public class Acumulador {
+public class Tabuada {
     public static void main(String[] args) {
-        Integer num, sum=0, cont;
+        Integer num, mult;
         
+        System.out.println("Digite um número:");
         Scanner leitor = new Scanner(System.in);
+        num = leitor.nextInt();
         
-        
-        
-        while(true){
-            System.out.println("Digite um número:");
-            num = leitor.nextInt();
-            if(num == 0){
-                System.out.println("Sum: "+sum);
-                break;
-            }
-            sum+=num;
-            
+        Integer cont = 0;
+        for(mult = num;cont <= 10; cont ++){
+            System.out.println(+num+"x"+cont+ "=" +(num*cont));
         }
     }
 }
