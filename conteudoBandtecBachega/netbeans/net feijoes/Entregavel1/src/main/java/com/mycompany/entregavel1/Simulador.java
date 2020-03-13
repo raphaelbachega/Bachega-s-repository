@@ -19,7 +19,6 @@ public class Simulador extends javax.swing.JFrame {
      * Creates new form Simulador
      */
     public Simulador() {
-        UImanager.setLookAndFeel(UImanager.getCrossPlataformLookAndFeelClassName)
         initComponents();
         
         
